@@ -1,7 +1,11 @@
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 
 ARG TARGETARCH
 ARG RUNNER_VERSION=2.321.0
+
+# The runner binary is a .NET app; skip its ICU dependency entirely instead of
+# chasing libicu package names across Ubuntu releases.
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
