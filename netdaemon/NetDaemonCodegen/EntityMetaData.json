@@ -1,0 +1,5552 @@
+{
+  "domains": [
+    {
+      "domain": "light",
+      "entities": [
+        {
+          "id": "light.hue_lightstrip_plus_1",
+          "friendlyName": "Hue lightstrip plus 1",
+          "cSharpName": "HueLightstripPlus1"
+        },
+        {
+          "id": "light.hue_smart_plug",
+          "friendlyName": "Hue Smart plug",
+          "cSharpName": "HueSmartPlug"
+        },
+        {
+          "id": "light.hue_white_lamp",
+          "friendlyName": "Hue white lamp",
+          "cSharpName": "HueWhiteLamp"
+        },
+        {
+          "id": "light.hue_white_lamp_1",
+          "friendlyName": "Hue white lamp 1",
+          "cSharpName": "HueWhiteLamp1"
+        },
+        {
+          "id": "light.hue_white_lamp_2",
+          "friendlyName": "Hue white lamp 2",
+          "cSharpName": "HueWhiteLamp2"
+        },
+        {
+          "id": "light.hueplay1",
+          "friendlyName": "HuePlay1",
+          "cSharpName": "Hueplay1"
+        },
+        {
+          "id": "light.hueplay2",
+          "friendlyName": "Schornstein 2",
+          "cSharpName": "Hueplay2"
+        },
+        {
+          "id": "light.hueplay3",
+          "friendlyName": "Schornstein 1",
+          "cSharpName": "Hueplay3"
+        },
+        {
+          "id": "light.livingcolors",
+          "friendlyName": "LivingColors",
+          "cSharpName": "Livingcolors"
+        },
+        {
+          "id": "light.smart_power_switch_dnd",
+          "friendlyName": "smart_power_switch Dnd",
+          "cSharpName": "SmartPowerSwitchDnd"
+        },
+        {
+          "id": "light.studio",
+          "friendlyName": "Studio",
+          "cSharpName": "Studio"
+        },
+        {
+          "id": "light.tv_bank",
+          "friendlyName": "TV Bank",
+          "cSharpName": "TvBank"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "supported_color_modes",
+          "cSharpName": "SupportedColorModes",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "color_mode",
+          "cSharpName": "ColorMode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "min_color_temp_kelvin",
+          "cSharpName": "MinColorTempKelvin",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "max_color_temp_kelvin",
+          "cSharpName": "MaxColorTempKelvin",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "min_mireds",
+          "cSharpName": "MinMireds",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "max_mireds",
+          "cSharpName": "MaxMireds",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "brightness",
+          "cSharpName": "Brightness",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "color_temp_kelvin",
+          "cSharpName": "ColorTempKelvin",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "color_temp",
+          "cSharpName": "ColorTemp",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "hs_color",
+          "cSharpName": "HsColor",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
+        },
+        {
+          "jsonName": "rgb_color",
+          "cSharpName": "RgbColor",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
+        },
+        {
+          "jsonName": "xy_color",
+          "cSharpName": "XyColor",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
+        },
+        {
+          "jsonName": "entity_id",
+          "cSharpName": "EntityId",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "effect_list",
+          "cSharpName": "EffectList",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "color",
+          "cSharpName": "Color",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "mode",
+          "cSharpName": "Mode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "dynamics",
+          "cSharpName": "Dynamics",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "effect",
+          "cSharpName": "Effect",
+          "clrType": null
+        },
+        {
+          "jsonName": "is_hue_group",
+          "cSharpName": "IsHueGroup",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "hue_scenes",
+          "cSharpName": "HueScenes",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "hue_type",
+          "cSharpName": "HueType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "lights",
+          "cSharpName": "Lights",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "media_player",
+      "entities": [
+        {
+          "id": "media_player.badezimmer",
+          "friendlyName": "Badezimmer",
+          "cSharpName": "Badezimmer"
+        },
+        {
+          "id": "media_player.esszimmer",
+          "friendlyName": "Esszimmer",
+          "cSharpName": "Esszimmer"
+        },
+        {
+          "id": "media_player.kuche",
+          "friendlyName": "K\u00FCche",
+          "cSharpName": "Kuche"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "app_id",
+          "cSharpName": "AppId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "app_name",
+          "cSharpName": "AppName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "entity_picture_local",
+          "cSharpName": "EntityPictureLocal",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "volume_level",
+          "cSharpName": "VolumeLevel",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "is_volume_muted",
+          "cSharpName": "IsVolumeMuted",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "media_content_id",
+          "cSharpName": "MediaContentId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_content_type",
+          "cSharpName": "MediaContentType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_duration",
+          "cSharpName": "MediaDuration",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "media_position",
+          "cSharpName": "MediaPosition",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "media_position_updated_at",
+          "cSharpName": "MediaPositionUpdatedAt",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_title",
+          "cSharpName": "MediaTitle",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_album_name",
+          "cSharpName": "MediaAlbumName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_image_url",
+          "cSharpName": "MediaImageUrl",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_artist",
+          "cSharpName": "MediaArtist",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "sound_mode_list",
+          "cSharpName": "SoundModeList",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "media_track",
+          "cSharpName": "MediaTrack",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "shuffle",
+          "cSharpName": "Shuffle",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "repeat",
+          "cSharpName": "Repeat",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "source_list",
+          "cSharpName": "SourceList",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "source",
+          "cSharpName": "Source",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "adb_response",
+          "cSharpName": "AdbResponse",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "hdmi_input",
+          "cSharpName": "HdmiInput",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "sound_mode",
+          "cSharpName": "SoundMode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "sound_mode_raw",
+          "cSharpName": "SoundModeRaw",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "group_members",
+          "cSharpName": "GroupMembers",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "media_channel",
+          "cSharpName": "MediaChannel",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "queue_position",
+          "cSharpName": "QueuePosition",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "queue_size",
+          "cSharpName": "QueueSize",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "alarm_control_panel",
+      "entities": [
+        {
+          "id": "alarm_control_panel.intrusion_detection_system",
+          "friendlyName": "Intrusion Detection System",
+          "cSharpName": "IntrusionDetectionSystem"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "code_format",
+          "cSharpName": "CodeFormat",
+          "clrType": null
+        },
+        {
+          "jsonName": "changed_by",
+          "cSharpName": "ChangedBy",
+          "clrType": null
+        },
+        {
+          "jsonName": "code_arm_required",
+          "cSharpName": "CodeArmRequired",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "automation",
+      "entities": [
+        {
+          "id": "automation.heating_off",
+          "friendlyName": "heating_off",
+          "cSharpName": "HeatingOff"
+        },
+        {
+          "id": "automation.heating_on",
+          "friendlyName": "heating_on",
+          "cSharpName": "HeatingOn"
+        },
+        {
+          "id": "automation.ipad_low_battery",
+          "friendlyName": "IPad low battery",
+          "cSharpName": "IpadLowBattery"
+        },
+        {
+          "id": "automation.motionlightstairs",
+          "friendlyName": "MotionLightStairs",
+          "cSharpName": "Motionlightstairs"
+        },
+        {
+          "id": "automation.notify_on_window_timer_finished",
+          "friendlyName": "notify_on_window_timer_finished",
+          "cSharpName": "NotifyOnWindowTimerFinished"
+        },
+        {
+          "id": "automation.notify_router_connected",
+          "friendlyName": "notify_router_connected",
+          "cSharpName": "NotifyRouterConnected"
+        },
+        {
+          "id": "automation.pclightoffonpoweroff",
+          "friendlyName": "PcLightOffOnPowerOff",
+          "cSharpName": "Pclightoffonpoweroff"
+        },
+        {
+          "id": "automation.pclightononpoweron",
+          "friendlyName": "PcLightOnOnPowerOn",
+          "cSharpName": "Pclightononpoweron"
+        },
+        {
+          "id": "automation.reset_sonos",
+          "friendlyName": "reset sonos",
+          "cSharpName": "ResetSonos"
+        },
+        {
+          "id": "automation.smart_switch_1_lower_left_button_press_short",
+          "friendlyName": "smart_switch_1_LOWER_LEFT_BUTTON_PRESS_SHORT",
+          "cSharpName": "SmartSwitch1LowerLeftButtonPressShort"
+        },
+        {
+          "id": "automation.smart_switch_1_lower_right_button_press_short",
+          "friendlyName": "smart_switch_1_LOWER_RIGHT_BUTTON_PRESS_SHORT",
+          "cSharpName": "SmartSwitch1LowerRightButtonPressShort"
+        },
+        {
+          "id": "automation.smart_switch_1_upper_left_button_press_short",
+          "friendlyName": "smart_switch_1_UPPER_LEFT_BUTTON_PRESS_SHORT",
+          "cSharpName": "SmartSwitch1UpperLeftButtonPressShort"
+        },
+        {
+          "id": "automation.smart_switch_1_upper_right_button_press_short",
+          "friendlyName": "smart_switch_1_UPPER_RIGHT_BUTTON_PRESS_SHORT",
+          "cSharpName": "SmartSwitch1UpperRightButtonPressShort"
+        },
+        {
+          "id": "automation.solarbank_nacht_preset_bei_aktualisierter_prognose_neu_setzen",
+          "friendlyName": "Solarbank \u2013 Nacht-Preset bei aktualisierter Prognose neu setzen",
+          "cSharpName": "SolarbankNachtPresetBeiAktualisierterPrognoseNeuSetzen"
+        },
+        {
+          "id": "automation.solarbank_nacht_preset_bei_sonnenuntergang_setzen",
+          "friendlyName": "Solarbank \u2013 Nacht-Preset bei Sonnenuntergang setzen",
+          "cSharpName": "SolarbankNachtPresetBeiSonnenuntergangSetzen"
+        },
+        {
+          "id": "automation.solarbank_tages_preset_dynamisch_anpassen",
+          "friendlyName": "Solarbank \u2013 Tages-Preset dynamisch anpassen",
+          "cSharpName": "SolarbankTagesPresetDynamischAnpassen"
+        },
+        {
+          "id": "automation.sonos_bathroom_reset",
+          "friendlyName": "sonos_bathroom_reset",
+          "cSharpName": "SonosBathroomReset"
+        },
+        {
+          "id": "automation.steckdose_aus",
+          "friendlyName": "Steckdose aus",
+          "cSharpName": "SteckdoseAus"
+        },
+        {
+          "id": "automation.studio_fenster_offnen",
+          "friendlyName": "Studio Fenster \u00F6ffnen",
+          "cSharpName": "StudioFensterOffnen"
+        },
+        {
+          "id": "automation.studio_licht_aus_nacht",
+          "friendlyName": "Studio Licht aus nacht",
+          "cSharpName": "StudioLichtAusNacht"
+        },
+        {
+          "id": "automation.timer_start_on_window_open",
+          "friendlyName": "window_timer_start_on_window_open",
+          "cSharpName": "TimerStartOnWindowOpen"
+        },
+        {
+          "id": "automation.trocknerbenachrichtigung",
+          "friendlyName": "TrocknerBenachrichtigung",
+          "cSharpName": "Trocknerbenachrichtigung"
+        },
+        {
+          "id": "automation.turn_off",
+          "friendlyName": "Turn Off",
+          "cSharpName": "TurnOff"
+        },
+        {
+          "id": "automation.waschmaschinefertig",
+          "friendlyName": "WaschmaschineFertig",
+          "cSharpName": "Waschmaschinefertig"
+        },
+        {
+          "id": "automation.window_timer_stop_on_window_close",
+          "friendlyName": "window_timer_stop_on_window_close",
+          "cSharpName": "WindowTimerStopOnWindowClose"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "id",
+          "cSharpName": "Id",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "last_triggered",
+          "cSharpName": "LastTriggered",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "mode",
+          "cSharpName": "Mode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "current",
+          "cSharpName": "Current",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "binary_sensor",
+      "entities": [
+        {
+          "id": "binary_sensor.adguard_lan_status",
+          "friendlyName": "adguard.lan Status",
+          "cSharpName": "AdguardLanStatus"
+        },
+        {
+          "id": "binary_sensor.adobe_status",
+          "friendlyName": "adobe Status",
+          "cSharpName": "AdobeStatus"
+        },
+        {
+          "id": "binary_sensor.authentik_status",
+          "friendlyName": "authentik Status",
+          "cSharpName": "AuthentikStatus"
+        },
+        {
+          "id": "binary_sensor.docker_status",
+          "friendlyName": "docker Status",
+          "cSharpName": "DockerStatus"
+        },
+        {
+          "id": "binary_sensor.esphome_node_pc_state",
+          "friendlyName": "PC state",
+          "cSharpName": "EsphomeNodePcState"
+        },
+        {
+          "id": "binary_sensor.esszimmer_charging",
+          "friendlyName": "Esszimmer Ladestatus",
+          "cSharpName": "EsszimmerCharging"
+        },
+        {
+          "id": "binary_sensor.esszimmer_microphone",
+          "friendlyName": "Esszimmer Mikrofon",
+          "cSharpName": "EsszimmerMicrophone"
+        },
+        {
+          "id": "binary_sensor.fenster_badezimmer_1",
+          "friendlyName": "fenster_badezimmer_1",
+          "cSharpName": "FensterBadezimmer1"
+        },
+        {
+          "id": "binary_sensor.fenster_badezimmer_1_battery",
+          "friendlyName": "fenster_badezimmer_1 Battery",
+          "cSharpName": "FensterBadezimmer1Battery"
+        },
+        {
+          "id": "binary_sensor.fritz_box_7590_verbinden",
+          "friendlyName": "FRITZ!Box 7590 Verbindung",
+          "cSharpName": "FritzBox7590Verbinden"
+        },
+        {
+          "id": "binary_sensor.fritz_box_7590_verbindung",
+          "friendlyName": "FRITZ!Box 7590 Verbindung",
+          "cSharpName": "FritzBox7590Verbindung"
+        },
+        {
+          "id": "binary_sensor.gluetun_status",
+          "friendlyName": "gluetun Status",
+          "cSharpName": "GluetunStatus"
+        },
+        {
+          "id": "binary_sensor.haos_status",
+          "friendlyName": "haos Status",
+          "cSharpName": "HaosStatus"
+        },
+        {
+          "id": "binary_sensor.ht_badezimmer_1_battery",
+          "friendlyName": "ht_badezimmer_1 Battery",
+          "cSharpName": "HtBadezimmer1Battery"
+        },
+        {
+          "id": "binary_sensor.ht_esszimmer_1_battery",
+          "friendlyName": "ht_esszimmer_1 Battery",
+          "cSharpName": "HtEsszimmer1Battery"
+        },
+        {
+          "id": "binary_sensor.ht_kuche_1_battery",
+          "friendlyName": "ht_kuche_1 Battery",
+          "cSharpName": "HtKuche1Battery"
+        },
+        {
+          "id": "binary_sensor.ht_studio_giebel_battery",
+          "friendlyName": "ht_studio_giebel Battery",
+          "cSharpName": "HtStudioGiebelBattery"
+        },
+        {
+          "id": "binary_sensor.ht_studio_leseecke_battery",
+          "friendlyName": "ht_studio_leseecke Battery",
+          "cSharpName": "HtStudioLeseeckeBattery"
+        },
+        {
+          "id": "binary_sensor.ipad_6_focus",
+          "friendlyName": "iPad (6) Focus",
+          "cSharpName": "Ipad6Focus"
+        },
+        {
+          "id": "binary_sensor.iphone_focus",
+          "friendlyName": "iPhone Focus",
+          "cSharpName": "IphoneFocus"
+        },
+        {
+          "id": "binary_sensor.jellyfin_status",
+          "friendlyName": "jellyfin Status",
+          "cSharpName": "JellyfinStatus"
+        },
+        {
+          "id": "binary_sensor.jellyseerr_status",
+          "friendlyName": "jellyseerr Status",
+          "cSharpName": "JellyseerrStatus"
+        },
+        {
+          "id": "binary_sensor.kuche_microphone",
+          "friendlyName": "K\u00FCche Mikrofon",
+          "cSharpName": "KucheMicrophone"
+        },
+        {
+          "id": "binary_sensor.markus_de_mqtt_verbindung",
+          "friendlyName": "Markus (DE) MQTT Verbindung",
+          "cSharpName": "MarkusDeMqttVerbindung"
+        },
+        {
+          "id": "binary_sensor.markus_de_nachrichten",
+          "friendlyName": "Markus (DE) Nachrichten",
+          "cSharpName": "MarkusDeNachrichten"
+        },
+        {
+          "id": "binary_sensor.nextcloud_status",
+          "friendlyName": "nextcloud Status",
+          "cSharpName": "NextcloudStatus"
+        },
+        {
+          "id": "binary_sensor.nginx_lan_status",
+          "friendlyName": "nginx.lan Status",
+          "cSharpName": "NginxLanStatus"
+        },
+        {
+          "id": "binary_sensor.prowlarr_status",
+          "friendlyName": "prowlarr Status",
+          "cSharpName": "ProwlarrStatus"
+        },
+        {
+          "id": "binary_sensor.pve_status",
+          "friendlyName": "pve Status",
+          "cSharpName": "PveStatus"
+        },
+        {
+          "id": "binary_sensor.radarr_status",
+          "friendlyName": "radarr Status",
+          "cSharpName": "RadarrStatus"
+        },
+        {
+          "id": "binary_sensor.sab_warnhinweise",
+          "friendlyName": "Warnhinweise",
+          "cSharpName": "SabWarnhinweise"
+        },
+        {
+          "id": "binary_sensor.sabnzbd_status",
+          "friendlyName": "sabnzbd Status",
+          "cSharpName": "SabnzbdStatus"
+        },
+        {
+          "id": "binary_sensor.smart_switch_1_battery",
+          "friendlyName": "smart_switch_1 Battery",
+          "cSharpName": "SmartSwitch1Battery"
+        },
+        {
+          "id": "binary_sensor.solarbank_2_e1600_pro_ai_gesteuert",
+          "friendlyName": "Solarbank 2 E1600 Pro AI gesteuert",
+          "cSharpName": "Solarbank2E1600ProAiGesteuert"
+        },
+        {
+          "id": "binary_sensor.solarbank_2_e1600_pro_ota_update",
+          "friendlyName": "Solarbank 2 E1600 Pro OTA Update",
+          "cSharpName": "Solarbank2E1600ProOtaUpdate"
+        },
+        {
+          "id": "binary_sensor.solarbank_2_e1600_pro_wifi_verbindung",
+          "friendlyName": "Solarbank 2 E1600 Pro Wifi Verbindung",
+          "cSharpName": "Solarbank2E1600ProWifiVerbindung"
+        },
+        {
+          "id": "binary_sensor.sonarr_status",
+          "friendlyName": "sonarr Status",
+          "cSharpName": "SonarrStatus"
+        },
+        {
+          "id": "binary_sensor.system_home_akkuheizung",
+          "friendlyName": "System Home  Akkuheizung",
+          "cSharpName": "SystemHomeAkkuheizung"
+        },
+        {
+          "id": "binary_sensor.system_home_systemadministration",
+          "friendlyName": "System Home  Systemadministration",
+          "cSharpName": "SystemHomeSystemadministration"
+        },
+        {
+          "id": "binary_sensor.treppe_bewegung",
+          "friendlyName": "Treppe Bewegung",
+          "cSharpName": "TreppeBewegung"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "power_source",
+          "cSharpName": "PowerSource",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "wifi_ssid",
+          "cSharpName": "WifiSsid",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "wifi_signal",
+          "cSharpName": "WifiSignal",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "rssi",
+          "cSharpName": "Rssi",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "wifi_mac",
+          "cSharpName": "WifiMac",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "bt_mac",
+          "cSharpName": "BtMac",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "wireless_type",
+          "cSharpName": "WirelessType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "ota_version",
+          "cSharpName": "OtaVersion",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "ota_components",
+          "cSharpName": "OtaComponents",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+        },
+        {
+          "jsonName": "priority",
+          "cSharpName": "Priority",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "running_time",
+          "cSharpName": "RunningTime",
+          "clrType": null
+        },
+        {
+          "jsonName": "system_msg",
+          "cSharpName": "SystemMsg",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_msg",
+          "cSharpName": "DeviceMsg",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "button",
+      "entities": [
+        {
+          "id": "button.adguard_lan_neu_starten",
+          "friendlyName": "adguard.lan Neu starten",
+          "cSharpName": "AdguardLanNeuStarten"
+        },
+        {
+          "id": "button.adguard_lan_starten",
+          "friendlyName": "adguard.lan Starten",
+          "cSharpName": "AdguardLanStarten"
+        },
+        {
+          "id": "button.adguard_lan_stoppen",
+          "friendlyName": "adguard.lan Stoppen",
+          "cSharpName": "AdguardLanStoppen"
+        },
+        {
+          "id": "button.adobe_neu_starten",
+          "friendlyName": "adobe Neu starten",
+          "cSharpName": "AdobeNeuStarten"
+        },
+        {
+          "id": "button.adobe_ruhezustand",
+          "friendlyName": "adobe Ruhezustand",
+          "cSharpName": "AdobeRuhezustand"
+        },
+        {
+          "id": "button.adobe_starten",
+          "friendlyName": "adobe Starten",
+          "cSharpName": "AdobeStarten"
+        },
+        {
+          "id": "button.adobe_stoppen",
+          "friendlyName": "adobe Stoppen",
+          "cSharpName": "AdobeStoppen"
+        },
+        {
+          "id": "button.adobe_zurucksetzen",
+          "friendlyName": "adobe Zur\u00FCcksetzen",
+          "cSharpName": "AdobeZurucksetzen"
+        },
+        {
+          "id": "button.ausentemperatur_identifizieren",
+          "friendlyName": "Au\u00DFentemperatur Identifizieren",
+          "cSharpName": "AusentemperaturIdentifizieren"
+        },
+        {
+          "id": "button.authentik_neu_starten",
+          "friendlyName": "authentik Neu starten",
+          "cSharpName": "AuthentikNeuStarten"
+        },
+        {
+          "id": "button.authentik_starten",
+          "friendlyName": "authentik Starten",
+          "cSharpName": "AuthentikStarten"
+        },
+        {
+          "id": "button.authentik_stoppen",
+          "friendlyName": "authentik Stoppen",
+          "cSharpName": "AuthentikStoppen"
+        },
+        {
+          "id": "button.docker_neu_starten",
+          "friendlyName": "docker Neu starten",
+          "cSharpName": "DockerNeuStarten"
+        },
+        {
+          "id": "button.docker_starten",
+          "friendlyName": "docker Starten",
+          "cSharpName": "DockerStarten"
+        },
+        {
+          "id": "button.docker_stoppen",
+          "friendlyName": "docker Stoppen",
+          "cSharpName": "DockerStoppen"
+        },
+        {
+          "id": "button.fritz_box_7590_aufraumen",
+          "friendlyName": "FRITZ!Box 7590 Aufr\u00E4umen",
+          "cSharpName": "FritzBox7590Aufraumen"
+        },
+        {
+          "id": "button.fritz_box_7590_firmware_update",
+          "friendlyName": "FRITZ!Box 7590 Firmware-Update",
+          "cSharpName": "FritzBox7590FirmwareUpdate"
+        },
+        {
+          "id": "button.fritz_box_7590_neu_starten",
+          "friendlyName": "FRITZ!Box 7590 Neu starten",
+          "cSharpName": "FritzBox7590NeuStarten"
+        },
+        {
+          "id": "button.fritz_box_7590_neu_verbinden",
+          "friendlyName": "FRITZ!Box 7590 Neu verbinden",
+          "cSharpName": "FritzBox7590NeuVerbinden"
+        },
+        {
+          "id": "button.gluetun_neu_starten",
+          "friendlyName": "gluetun Neu starten",
+          "cSharpName": "GluetunNeuStarten"
+        },
+        {
+          "id": "button.gluetun_starten",
+          "friendlyName": "gluetun Starten",
+          "cSharpName": "GluetunStarten"
+        },
+        {
+          "id": "button.gluetun_stoppen",
+          "friendlyName": "gluetun Stoppen",
+          "cSharpName": "GluetunStoppen"
+        },
+        {
+          "id": "button.haos_neu_starten",
+          "friendlyName": "haos Neu starten",
+          "cSharpName": "HaosNeuStarten"
+        },
+        {
+          "id": "button.haos_ruhezustand",
+          "friendlyName": "haos Ruhezustand",
+          "cSharpName": "HaosRuhezustand"
+        },
+        {
+          "id": "button.haos_starten",
+          "friendlyName": "haos Starten",
+          "cSharpName": "HaosStarten"
+        },
+        {
+          "id": "button.haos_stoppen",
+          "friendlyName": "haos Stoppen",
+          "cSharpName": "HaosStoppen"
+        },
+        {
+          "id": "button.haos_zurucksetzen",
+          "friendlyName": "haos Zur\u00FCcksetzen",
+          "cSharpName": "HaosZurucksetzen"
+        },
+        {
+          "id": "button.jellyfin_neu_starten",
+          "friendlyName": "jellyfin Neu starten",
+          "cSharpName": "JellyfinNeuStarten"
+        },
+        {
+          "id": "button.jellyfin_starten",
+          "friendlyName": "jellyfin Starten",
+          "cSharpName": "JellyfinStarten"
+        },
+        {
+          "id": "button.jellyfin_stoppen",
+          "friendlyName": "jellyfin Stoppen",
+          "cSharpName": "JellyfinStoppen"
+        },
+        {
+          "id": "button.jellyseerr_neu_starten",
+          "friendlyName": "jellyseerr Neu starten",
+          "cSharpName": "JellyseerrNeuStarten"
+        },
+        {
+          "id": "button.jellyseerr_starten",
+          "friendlyName": "jellyseerr Starten",
+          "cSharpName": "JellyseerrStarten"
+        },
+        {
+          "id": "button.jellyseerr_stoppen",
+          "friendlyName": "jellyseerr Stoppen",
+          "cSharpName": "JellyseerrStoppen"
+        },
+        {
+          "id": "button.markus_de_fahrzeuge_aktualisieren",
+          "friendlyName": "Markus (DE) Fahrzeuge aktualisieren",
+          "cSharpName": "MarkusDeFahrzeugeAktualisieren"
+        },
+        {
+          "id": "button.nextcloud_neu_starten",
+          "friendlyName": "nextcloud Neu starten",
+          "cSharpName": "NextcloudNeuStarten"
+        },
+        {
+          "id": "button.nextcloud_starten",
+          "friendlyName": "nextcloud Starten",
+          "cSharpName": "NextcloudStarten"
+        },
+        {
+          "id": "button.nextcloud_stoppen",
+          "friendlyName": "nextcloud Stoppen",
+          "cSharpName": "NextcloudStoppen"
+        },
+        {
+          "id": "button.nginx_lan_neu_starten",
+          "friendlyName": "nginx.lan Neu starten",
+          "cSharpName": "NginxLanNeuStarten"
+        },
+        {
+          "id": "button.nginx_lan_starten",
+          "friendlyName": "nginx.lan Starten",
+          "cSharpName": "NginxLanStarten"
+        },
+        {
+          "id": "button.nginx_lan_stoppen",
+          "friendlyName": "nginx.lan Stoppen",
+          "cSharpName": "NginxLanStoppen"
+        },
+        {
+          "id": "button.pc_192_168_178_7_wake_on_lan",
+          "friendlyName": "PC-BC-24-11-7E-67-95 Wake on LAN",
+          "cSharpName": "Pc1921681787WakeOnLan"
+        },
+        {
+          "id": "button.prowlarr_neu_starten",
+          "friendlyName": "prowlarr Neu starten",
+          "cSharpName": "ProwlarrNeuStarten"
+        },
+        {
+          "id": "button.prowlarr_starten",
+          "friendlyName": "prowlarr Starten",
+          "cSharpName": "ProwlarrStarten"
+        },
+        {
+          "id": "button.prowlarr_stoppen",
+          "friendlyName": "prowlarr Stoppen",
+          "cSharpName": "ProwlarrStoppen"
+        },
+        {
+          "id": "button.pve_alle_starten",
+          "friendlyName": "pve Alle starten",
+          "cSharpName": "PveAlleStarten"
+        },
+        {
+          "id": "button.pve_alle_stoppen",
+          "friendlyName": "pve Alle stoppen",
+          "cSharpName": "PveAlleStoppen"
+        },
+        {
+          "id": "button.pve_herunterfahren",
+          "friendlyName": "pve Herunterfahren",
+          "cSharpName": "PveHerunterfahren"
+        },
+        {
+          "id": "button.pve_neu_starten",
+          "friendlyName": "pve Neu starten",
+          "cSharpName": "PveNeuStarten"
+        },
+        {
+          "id": "button.radarr_neu_starten",
+          "friendlyName": "radarr Neu starten",
+          "cSharpName": "RadarrNeuStarten"
+        },
+        {
+          "id": "button.radarr_starten",
+          "friendlyName": "radarr Starten",
+          "cSharpName": "RadarrStarten"
+        },
+        {
+          "id": "button.radarr_stoppen",
+          "friendlyName": "radarr Stoppen",
+          "cSharpName": "RadarrStoppen"
+        },
+        {
+          "id": "button.sab_fortsetzen",
+          "friendlyName": "Fortsetzen",
+          "cSharpName": "SabFortsetzen"
+        },
+        {
+          "id": "button.sab_pausieren",
+          "friendlyName": "Pausieren",
+          "cSharpName": "SabPausieren"
+        },
+        {
+          "id": "button.sabnzbd_neu_starten",
+          "friendlyName": "sabnzbd Neu starten",
+          "cSharpName": "SabnzbdNeuStarten"
+        },
+        {
+          "id": "button.sabnzbd_starten",
+          "friendlyName": "sabnzbd Starten",
+          "cSharpName": "SabnzbdStarten"
+        },
+        {
+          "id": "button.sabnzbd_stoppen",
+          "friendlyName": "sabnzbd Stoppen",
+          "cSharpName": "SabnzbdStoppen"
+        },
+        {
+          "id": "button.smart_power_switch_refresh",
+          "friendlyName": "smart_power_switch Refresh",
+          "cSharpName": "SmartPowerSwitchRefresh"
+        },
+        {
+          "id": "button.smart_power_switch_reload",
+          "friendlyName": "smart_power_switch Reload",
+          "cSharpName": "SmartPowerSwitchReload"
+        },
+        {
+          "id": "button.solarbank_2_e1600_pro_details_aktualisieren",
+          "friendlyName": "Solarbank 2 E1600 Pro Details aktualisieren",
+          "cSharpName": "Solarbank2E1600ProDetailsAktualisieren"
+        },
+        {
+          "id": "button.sonarr_neu_starten",
+          "friendlyName": "sonarr Neu starten",
+          "cSharpName": "SonarrNeuStarten"
+        },
+        {
+          "id": "button.sonarr_starten",
+          "friendlyName": "sonarr Starten",
+          "cSharpName": "SonarrStarten"
+        },
+        {
+          "id": "button.sonarr_stoppen",
+          "friendlyName": "sonarr Stoppen",
+          "cSharpName": "SonarrStoppen"
+        },
+        {
+          "id": "button.temperatur_identifizieren",
+          "friendlyName": "Temperatur  Identifizieren",
+          "cSharpName": "TemperaturIdentifizieren"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        }
+      ]
+    },
+    {
+      "domain": "calendar",
+      "entities": [
+        {
+          "id": "calendar.feiertage_in_deutschland",
+          "friendlyName": "Feiertage in deutschland",
+          "cSharpName": "FeiertageInDeutschland"
+        },
+        {
+          "id": "calendar.geburtstage",
+          "friendlyName": "Geburtstage",
+          "cSharpName": "Geburtstage"
+        },
+        {
+          "id": "calendar.geburtstage_2",
+          "friendlyName": "Geburtstage",
+          "cSharpName": "Geburtstage2"
+        },
+        {
+          "id": "calendar.geschaft",
+          "friendlyName": "Gesch\u00E4ft",
+          "cSharpName": "Geschaft"
+        },
+        {
+          "id": "calendar.heizung",
+          "friendlyName": "Heizung",
+          "cSharpName": "Heizung"
+        },
+        {
+          "id": "calendar.holidays_in_germany",
+          "friendlyName": "Holidays in germany",
+          "cSharpName": "HolidaysInGermany"
+        },
+        {
+          "id": "calendar.privat",
+          "friendlyName": "Privat",
+          "cSharpName": "Privat"
+        },
+        {
+          "id": "calendar.schatziplaner",
+          "friendlyName": "Schatziplaner",
+          "cSharpName": "Schatziplaner"
+        },
+        {
+          "id": "calendar.semesterprogramm",
+          "friendlyName": "Semesterprogramm",
+          "cSharpName": "Semesterprogramm"
+        },
+        {
+          "id": "calendar.week_numbers",
+          "friendlyName": "Week numbers",
+          "cSharpName": "WeekNumbers"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "message",
+          "cSharpName": "Message",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "all_day",
+          "cSharpName": "AllDay",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "start_time",
+          "cSharpName": "StartTime",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "end_time",
+          "cSharpName": "EndTime",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "location",
+          "cSharpName": "Location",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "description",
+          "cSharpName": "Description",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "offset_reached",
+          "cSharpName": "OffsetReached",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        }
+      ]
+    },
+    {
+      "domain": "climate",
+      "entities": [
+        {
+          "id": "climate.room_climate_badezimmer",
+          "friendlyName": "Room Climate Badezimmer",
+          "cSharpName": "RoomClimateBadezimmer"
+        },
+        {
+          "id": "climate.room_climate_esszimmer",
+          "friendlyName": "Room Climate Esszimmer",
+          "cSharpName": "RoomClimateEsszimmer"
+        },
+        {
+          "id": "climate.room_climate_kuche",
+          "friendlyName": "Room Climate K\u00FCche",
+          "cSharpName": "RoomClimateKuche"
+        },
+        {
+          "id": "climate.room_climate_wohnzimmer",
+          "friendlyName": "Room Climate Wohnzimmer",
+          "cSharpName": "RoomClimateWohnzimmer"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "hvac_modes",
+          "cSharpName": "HvacModes",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "min_temp",
+          "cSharpName": "MinTemp",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "max_temp",
+          "cSharpName": "MaxTemp",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "target_temp_step",
+          "cSharpName": "TargetTempStep",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "preset_modes",
+          "cSharpName": "PresetModes",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "current_temperature",
+          "cSharpName": "CurrentTemperature",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "temperature",
+          "cSharpName": "Temperature",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "preset_mode",
+          "cSharpName": "PresetMode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "conversation",
+      "entities": [
+        {
+          "id": "conversation.home_assistant",
+          "friendlyName": "Home Assistant",
+          "cSharpName": "HomeAssistant"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "device_tracker",
+      "entities": [
+        {
+          "id": "device_tracker.455ea625_de5d_45fb_8bfb_7da987d0062b",
+          "friendlyName": "PC-3A-97-24-E0-5F-08",
+          "cSharpName": "_455ea625De5d45fb8bfb7da987d0062b"
+        },
+        {
+          "id": "device_tracker.adguard",
+          "friendlyName": "adguard adguard",
+          "cSharpName": "Adguard"
+        },
+        {
+          "id": "device_tracker.anker",
+          "friendlyName": "Anker Anker",
+          "cSharpName": "Anker"
+        },
+        {
+          "id": "device_tracker.authentik_3",
+          "friendlyName": "authentik",
+          "cSharpName": "Authentik3"
+        },
+        {
+          "id": "device_tracker.authentik_4",
+          "friendlyName": "authentik authentik",
+          "cSharpName": "Authentik4"
+        },
+        {
+          "id": "device_tracker.b75d7e45_1950_4477_8bc2_c5e157394c74",
+          "friendlyName": "iPhone iPhone",
+          "cSharpName": "B75d7e45195044778bc2C5e157394c74"
+        },
+        {
+          "id": "device_tracker.d_mk_w10",
+          "friendlyName": "D-MK-W11 D-MK-W11",
+          "cSharpName": "DMkW10"
+        },
+        {
+          "id": "device_tracker.dev_mk_w10",
+          "friendlyName": "Dev-MK-W10",
+          "cSharpName": "DevMkW10"
+        },
+        {
+          "id": "device_tracker.duke_dell_1",
+          "friendlyName": "Duke-Dell-1 Duke-Dell-1",
+          "cSharpName": "DukeDell1"
+        },
+        {
+          "id": "device_tracker.ecb5fa22922a",
+          "friendlyName": "Hue Bridge ecb5fa22922a",
+          "cSharpName": "Ecb5fa22922a"
+        },
+        {
+          "id": "device_tracker.eimer",
+          "friendlyName": "Eimer Eimer",
+          "cSharpName": "Eimer"
+        },
+        {
+          "id": "device_tracker.esphome_node_pc",
+          "friendlyName": "PC esphome-node-pc",
+          "cSharpName": "EsphomeNodePc"
+        },
+        {
+          "id": "device_tracker.galaxy_s20_fe",
+          "friendlyName": "Galaxy-S20-FE",
+          "cSharpName": "GalaxyS20Fe"
+        },
+        {
+          "id": "device_tracker.galaxy_s22",
+          "friendlyName": "S22-von-Andreas",
+          "cSharpName": "GalaxyS22"
+        },
+        {
+          "id": "device_tracker.galaxys8",
+          "friendlyName": "GalaxyS8",
+          "cSharpName": "Galaxys8"
+        },
+        {
+          "id": "device_tracker.galaxywatch_d38c",
+          "friendlyName": "GalaxyWatch-D38C",
+          "cSharpName": "GalaxywatchD38c"
+        },
+        {
+          "id": "device_tracker.gelbetonne",
+          "friendlyName": "Gelbetonne Gelbetonne",
+          "cSharpName": "Gelbetonne"
+        },
+        {
+          "id": "device_tracker.homeassistant",
+          "friendlyName": "11ff32000952470bad05a5cbd082ea88-hap PC-02-B2-E6-FE-13-D6",
+          "cSharpName": "Homeassistant"
+        },
+        {
+          "id": "device_tracker.ipad_6",
+          "friendlyName": "iPad",
+          "cSharpName": "Ipad6"
+        },
+        {
+          "id": "device_tracker.ipad_pro",
+          "friendlyName": "iPad-Pro iPad-Pro",
+          "cSharpName": "IpadPro"
+        },
+        {
+          "id": "device_tracker.ipad_pro_2",
+          "friendlyName": "iPad-Pro-2 iPad-Pro-2",
+          "cSharpName": "IpadPro2"
+        },
+        {
+          "id": "device_tracker.iphone",
+          "friendlyName": "iPhone",
+          "cSharpName": "Iphone"
+        },
+        {
+          "id": "device_tracker.iphone_2",
+          "friendlyName": "iPhone",
+          "cSharpName": "Iphone2"
+        },
+        {
+          "id": "device_tracker.iphone_3",
+          "friendlyName": "Jessicas Braeburn ",
+          "cSharpName": "Iphone3"
+        },
+        {
+          "id": "device_tracker.m5mbp",
+          "friendlyName": "M5MBP Mac",
+          "cSharpName": "M5mbp"
+        },
+        {
+          "id": "device_tracker.meross_smart_plug",
+          "friendlyName": "smart_power_switch Meross-Smart-Plug",
+          "cSharpName": "MerossSmartPlug"
+        },
+        {
+          "id": "device_tracker.mk_w10",
+          "friendlyName": "JD-W10 JD-W10",
+          "cSharpName": "MkW10"
+        },
+        {
+          "id": "device_tracker.mk_w10_2",
+          "friendlyName": "MK-W11 MK-W11",
+          "cSharpName": "MkW102"
+        },
+        {
+          "id": "device_tracker.mk_w11",
+          "friendlyName": "PamsTest02",
+          "cSharpName": "MkW11"
+        },
+        {
+          "id": "device_tracker.mkiphone",
+          "friendlyName": "MkiPhone",
+          "cSharpName": "Mkiphone"
+        },
+        {
+          "id": "device_tracker.nginx",
+          "friendlyName": "PC-192-168-178-9 PC-192-168-178-9",
+          "cSharpName": "Nginx"
+        },
+        {
+          "id": "device_tracker.nuc12",
+          "friendlyName": "pve pve",
+          "cSharpName": "Nuc12"
+        },
+        {
+          "id": "device_tracker.pamstest01",
+          "friendlyName": "PamsTest01 PamsTest01",
+          "cSharpName": "Pamstest01"
+        },
+        {
+          "id": "device_tracker.pamstest02",
+          "friendlyName": "PamsTest02",
+          "cSharpName": "Pamstest02"
+        },
+        {
+          "id": "device_tracker.pc_192_168_178_160",
+          "friendlyName": "PC-192-168-178-160 PC-192-168-178-160",
+          "cSharpName": "Pc192168178160"
+        },
+        {
+          "id": "device_tracker.pc_192_168_178_7",
+          "friendlyName": "PC-BC-24-11-7E-67-95 PC-BC-24-11-7E-67-95",
+          "cSharpName": "Pc1921681787"
+        },
+        {
+          "id": "device_tracker.pc_40_2f_86_dd_65_e8",
+          "friendlyName": "PC---422f-86ff-fedd-65e8",
+          "cSharpName": "Pc402f86Dd65E8"
+        },
+        {
+          "id": "device_tracker.pc_70_f0_88_f8_d9_40",
+          "friendlyName": "PC-70-F0-88-F8-D9-40",
+          "cSharpName": "Pc70F088F8D940"
+        },
+        {
+          "id": "device_tracker.pc_8e_d7_75_87_8f_a0",
+          "friendlyName": "iPhone",
+          "cSharpName": "Pc8eD775878fA0"
+        },
+        {
+          "id": "device_tracker.pc_92_41_8e_4d_df_ab",
+          "friendlyName": "PC-92-41-8E-4D-DF-AB",
+          "cSharpName": "Pc92418e4dDfAb"
+        },
+        {
+          "id": "device_tracker.pc_a6_74_a6_b3_3b_ac",
+          "friendlyName": "PC-A6-74-A6-B3-3B-AC",
+          "cSharpName": "PcA674A6B33bAc"
+        },
+        {
+          "id": "device_tracker.pc_a6_ba_66_75_b6_94",
+          "friendlyName": "PC-A6-BA-66-75-B6-94",
+          "cSharpName": "PcA6Ba6675B694"
+        },
+        {
+          "id": "device_tracker.pc_aa_e9_5e_f0_db_39",
+          "friendlyName": "PC-AA-E9-5E-F0-DB-39 PC-AA-E9-5E-F0-DB-39",
+          "cSharpName": "PcAaE95eF0Db39"
+        },
+        {
+          "id": "device_tracker.pc_be24_11ff_fe56_60e5",
+          "friendlyName": "PC-192-168-178-11 nextcloud",
+          "cSharpName": "PcBe2411ffFe5660e5"
+        },
+        {
+          "id": "device_tracker.pc_c9_77d_b6e0_10ef",
+          "friendlyName": "iPhone iPhone",
+          "cSharpName": "PcC977dB6e010ef"
+        },
+        {
+          "id": "device_tracker.s21_fe_von_marvin",
+          "friendlyName": "S21-FE-von-Marvin",
+          "cSharpName": "S21FeVonMarvin"
+        },
+        {
+          "id": "device_tracker.shc1030ac",
+          "friendlyName": "shc1030ac shc1030ac",
+          "cSharpName": "Shc1030ac"
+        },
+        {
+          "id": "device_tracker.sonoszp",
+          "friendlyName": "K\u00FCche SonosZP",
+          "cSharpName": "Sonoszp"
+        },
+        {
+          "id": "device_tracker.sonoszp_2",
+          "friendlyName": "Esszimmer SonosZP",
+          "cSharpName": "Sonoszp2"
+        },
+        {
+          "id": "device_tracker.sonoszp_3",
+          "friendlyName": "Badezimmer SonosZP",
+          "cSharpName": "Sonoszp3"
+        },
+        {
+          "id": "device_tracker.soosenbinder_22",
+          "friendlyName": "Soosenbinder-22 Soosenbinder-22",
+          "cSharpName": "Soosenbinder22"
+        },
+        {
+          "id": "device_tracker.watch",
+          "friendlyName": "Watch Watch",
+          "cSharpName": "Watch"
+        },
+        {
+          "id": "device_tracker.win_o2bfee8indt",
+          "friendlyName": "WIN-O2BFEE8INDT",
+          "cSharpName": "WinO2bfee8indt"
+        },
+        {
+          "id": "device_tracker.wohnzimmer",
+          "friendlyName": "Wohnzimmer Wohnzimmer",
+          "cSharpName": "Wohnzimmer"
+        },
+        {
+          "id": "device_tracker.wohnzimmer_2",
+          "friendlyName": "Wohnzimmer Wohnzimmer",
+          "cSharpName": "Wohnzimmer2"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "source_type",
+          "cSharpName": "SourceType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "battery_level",
+          "cSharpName": "BatteryLevel",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "latitude",
+          "cSharpName": "Latitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "longitude",
+          "cSharpName": "Longitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "gps_accuracy",
+          "cSharpName": "GpsAccuracy",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "altitude",
+          "cSharpName": "Altitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "vertical_accuracy",
+          "cSharpName": "VerticalAccuracy",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "ip",
+          "cSharpName": "Ip",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "mac",
+          "cSharpName": "Mac",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "host_name",
+          "cSharpName": "HostName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "last_time_reachable",
+          "cSharpName": "LastTimeReachable",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "connected_to",
+          "cSharpName": "ConnectedTo",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "connection_type",
+          "cSharpName": "ConnectionType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "ssid",
+          "cSharpName": "Ssid",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "event",
+      "entities": [
+        {
+          "id": "event.backup_automatisches_backup",
+          "friendlyName": "Backup Automatisches Backup",
+          "cSharpName": "BackupAutomatischesBackup"
+        },
+        {
+          "id": "event.hue_dimmer_switch_1_button_1",
+          "friendlyName": "Hue dimmer switch 1 Taste 1",
+          "cSharpName": "HueDimmerSwitch1Button1"
+        },
+        {
+          "id": "event.hue_dimmer_switch_1_button_2",
+          "friendlyName": "Hue dimmer switch 1 Taste 2",
+          "cSharpName": "HueDimmerSwitch1Button2"
+        },
+        {
+          "id": "event.hue_dimmer_switch_1_button_3",
+          "friendlyName": "Hue dimmer switch 1 Taste 3",
+          "cSharpName": "HueDimmerSwitch1Button3"
+        },
+        {
+          "id": "event.hue_dimmer_switch_1_button_4",
+          "friendlyName": "Hue dimmer switch 1 Taste 4",
+          "cSharpName": "HueDimmerSwitch1Button4"
+        },
+        {
+          "id": "event.smart_switch_1_button_lower_left_button",
+          "friendlyName": "smart_switch_1 Button LOWER_LEFT_BUTTON",
+          "cSharpName": "SmartSwitch1ButtonLowerLeftButton"
+        },
+        {
+          "id": "event.smart_switch_1_button_lower_right_button",
+          "friendlyName": "smart_switch_1 Button LOWER_RIGHT_BUTTON",
+          "cSharpName": "SmartSwitch1ButtonLowerRightButton"
+        },
+        {
+          "id": "event.smart_switch_1_button_upper_left_button",
+          "friendlyName": "smart_switch_1 Button UPPER_LEFT_BUTTON",
+          "cSharpName": "SmartSwitch1ButtonUpperLeftButton"
+        },
+        {
+          "id": "event.smart_switch_1_button_upper_right_button",
+          "friendlyName": "smart_switch_1 Button UPPER_RIGHT_BUTTON",
+          "cSharpName": "SmartSwitch1ButtonUpperRightButton"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "event_types",
+          "cSharpName": "EventTypes",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "event_type",
+          "cSharpName": "EventType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_id",
+          "cSharpName": "DeviceId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "id",
+          "cSharpName": "Id",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "name",
+          "cSharpName": "Name",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "lastTimeTriggered",
+          "cSharpName": "LastTimeTriggered",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "image",
+      "entities": [
+        {
+          "id": "image.fritz_box_7590_fritz_box_gastzugang",
+          "friendlyName": "FRITZ!Box 7590 FRITZ!Box Gastzugang",
+          "cSharpName": "FritzBox7590FritzBoxGastzugang"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "access_token",
+          "cSharpName": "AccessToken",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "input_boolean",
+      "entities": [
+        {
+          "id": "input_boolean.dark_mode",
+          "friendlyName": "Dark mode",
+          "cSharpName": "DarkMode"
+        },
+        {
+          "id": "input_boolean.guest_mode",
+          "friendlyName": "Guest mode",
+          "cSharpName": "GuestMode"
+        },
+        {
+          "id": "input_boolean.heating_mode",
+          "friendlyName": "Heizmodus",
+          "cSharpName": "HeatingMode"
+        },
+        {
+          "id": "input_boolean.notification_bathroom_window_open",
+          "friendlyName": "Badezimmerfenster ist offen",
+          "cSharpName": "NotificationBathroomWindowOpen"
+        },
+        {
+          "id": "input_boolean.notification_dryer_enabled",
+          "friendlyName": "Trockner fertig Benachrichtigung",
+          "cSharpName": "NotificationDryerEnabled"
+        },
+        {
+          "id": "input_boolean.notification_send_on_outside_cooler",
+          "friendlyName": "Drau\u00DFen k\u00FChler Benachrichtigung",
+          "cSharpName": "NotificationSendOnOutsideCooler"
+        },
+        {
+          "id": "input_boolean.notification_washing_machine_enabled",
+          "friendlyName": "Waschmaschine fertig Benachrichtigung",
+          "cSharpName": "NotificationWashingMachineEnabled"
+        },
+        {
+          "id": "input_boolean.sb_optimierung_aktiv",
+          "friendlyName": "Solarbank Optimierung aktiv",
+          "cSharpName": "SbOptimierungAktiv"
+        },
+        {
+          "id": "input_boolean.sonons_bath_playing",
+          "friendlyName": "Sonos Bath playing",
+          "cSharpName": "SononsBathPlaying"
+        },
+        {
+          "id": "input_boolean.sonons_kitchen_playing",
+          "friendlyName": "Sonos kitchen playing",
+          "cSharpName": "SononsKitchenPlaying"
+        },
+        {
+          "id": "input_boolean.theme_alternative",
+          "friendlyName": "Theme alternative",
+          "cSharpName": "ThemeAlternative"
+        },
+        {
+          "id": "input_boolean.vacation_mode",
+          "friendlyName": "On Vacation",
+          "cSharpName": "VacationMode"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "editable",
+          "cSharpName": "Editable",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "input_number",
+      "isNumeric": true,
+      "entities": [
+        {
+          "id": "input_number.sb_akku_kapazitaet_wh",
+          "friendlyName": "SB Akku-Kapazit\u00E4t (Wh)",
+          "cSharpName": "SbAkkuKapazitaetWh"
+        },
+        {
+          "id": "input_number.sb_max_hausausgabe",
+          "friendlyName": "SB Maximale Hausausgabe",
+          "cSharpName": "SbMaxHausausgabe"
+        },
+        {
+          "id": "input_number.sb_min_preset_tag",
+          "friendlyName": "SB Minimal-Preset am Tag",
+          "cSharpName": "SbMinPresetTag"
+        },
+        {
+          "id": "input_number.sb_nacht_preset_niedrig",
+          "friendlyName": "SB Nacht-Preset (schlechte Prognose)",
+          "cSharpName": "SbNachtPresetNiedrig"
+        },
+        {
+          "id": "input_number.sb_nacht_preset_normal",
+          "friendlyName": "SB Nacht-Preset (normale Prognose)",
+          "cSharpName": "SbNachtPresetNormal"
+        },
+        {
+          "id": "input_number.sb_schwelle_schlechte_prognose",
+          "friendlyName": "SB Schwelle \u0027schlechte PV-Prognose morgen\u0027 (kWh)",
+          "cSharpName": "SbSchwelleSchlechtePrognose"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "initial",
+          "cSharpName": "Initial",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "editable",
+          "cSharpName": "Editable",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "min",
+          "cSharpName": "Min",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "max",
+          "cSharpName": "Max",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "step",
+          "cSharpName": "Step",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "mode",
+          "cSharpName": "Mode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "unit_of_measurement",
+          "cSharpName": "UnitOfMeasurement",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "number",
+      "isNumeric": true,
+      "entities": [
+        {
+          "id": "number.badezimmer_balance",
+          "friendlyName": "Badezimmer Balance",
+          "cSharpName": "BadezimmerBalance"
+        },
+        {
+          "id": "number.badezimmer_bass",
+          "friendlyName": "Badezimmer Bass",
+          "cSharpName": "BadezimmerBass"
+        },
+        {
+          "id": "number.badezimmer_treble",
+          "friendlyName": "Badezimmer H\u00F6hen",
+          "cSharpName": "BadezimmerTreble"
+        },
+        {
+          "id": "number.esszimmer_balance",
+          "friendlyName": "Esszimmer Balance",
+          "cSharpName": "EsszimmerBalance"
+        },
+        {
+          "id": "number.esszimmer_bass",
+          "friendlyName": "Esszimmer Bass",
+          "cSharpName": "EsszimmerBass"
+        },
+        {
+          "id": "number.esszimmer_treble",
+          "friendlyName": "Esszimmer H\u00F6hen",
+          "cSharpName": "EsszimmerTreble"
+        },
+        {
+          "id": "number.ht_badezimmer_1_offset",
+          "friendlyName": "ht_badezimmer_1 Offset",
+          "cSharpName": "HtBadezimmer1Offset"
+        },
+        {
+          "id": "number.ht_esszimmer_1_offset",
+          "friendlyName": "ht_esszimmer_1 Offset",
+          "cSharpName": "HtEsszimmer1Offset"
+        },
+        {
+          "id": "number.ht_kuche_1_offset",
+          "friendlyName": "ht_kuche_1 Offset",
+          "cSharpName": "HtKuche1Offset"
+        },
+        {
+          "id": "number.ht_studio_giebel_offset",
+          "friendlyName": "ht_studio_giebel Offset",
+          "cSharpName": "HtStudioGiebelOffset"
+        },
+        {
+          "id": "number.ht_studio_leseecke_offset",
+          "friendlyName": "ht_studio_leseecke Offset",
+          "cSharpName": "HtStudioLeseeckeOffset"
+        },
+        {
+          "id": "number.kuche_balance",
+          "friendlyName": "K\u00FCche Balance",
+          "cSharpName": "KucheBalance"
+        },
+        {
+          "id": "number.kuche_bass",
+          "friendlyName": "K\u00FCche Bass",
+          "cSharpName": "KucheBass"
+        },
+        {
+          "id": "number.kuche_treble",
+          "friendlyName": "K\u00FCche H\u00F6hen",
+          "cSharpName": "KucheTreble"
+        },
+        {
+          "id": "number.sab_geschwindigkeitsbegrenzung",
+          "friendlyName": "Geschwindigkeitsbegrenzung",
+          "cSharpName": "SabGeschwindigkeitsbegrenzung"
+        },
+        {
+          "id": "number.solarbank_2_e1600_pro_akku_kapazitat",
+          "friendlyName": "Solarbank 2 E1600 Pro Akku Kapazit\u00E4t",
+          "cSharpName": "Solarbank2E1600ProAkkuKapazitat"
+        },
+        {
+          "id": "number.solarbank_2_e1600_pro_system_einspeisevorgabe",
+          "friendlyName": "Solarbank 2 E1600 Pro System Einspeisevorgabe",
+          "cSharpName": "Solarbank2E1600ProSystemEinspeisevorgabe"
+        },
+        {
+          "id": "number.system_home_kwh_preis",
+          "friendlyName": "System Home  Festpreis kWh",
+          "cSharpName": "SystemHomeKwhPreis"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "min",
+          "cSharpName": "Min",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "max",
+          "cSharpName": "Max",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "step",
+          "cSharpName": "Step",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "mode",
+          "cSharpName": "Mode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "unit_of_measurement",
+          "cSharpName": "UnitOfMeasurement",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "expansions",
+          "cSharpName": "Expansions",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "calculated",
+          "cSharpName": "Calculated",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "person",
+      "entities": [
+        {
+          "id": "person.admin",
+          "friendlyName": "admin",
+          "cSharpName": "Admin"
+        },
+        {
+          "id": "person.jessica",
+          "friendlyName": "Jessica",
+          "cSharpName": "Jessica"
+        },
+        {
+          "id": "person.markus",
+          "friendlyName": "Markus",
+          "cSharpName": "Markus"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "editable",
+          "cSharpName": "Editable",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "id",
+          "cSharpName": "Id",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_trackers",
+          "cSharpName": "DeviceTrackers",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "latitude",
+          "cSharpName": "Latitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "longitude",
+          "cSharpName": "Longitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "gps_accuracy",
+          "cSharpName": "GpsAccuracy",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "source",
+          "cSharpName": "Source",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "user_id",
+          "cSharpName": "UserId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "scene",
+      "entities": [
+        {
+          "id": "scene.studio_dimmed",
+          "friendlyName": "Studio Dimmed",
+          "cSharpName": "StudioDimmed"
+        },
+        {
+          "id": "scene.studio_nightlight",
+          "friendlyName": "Studio Nightlight",
+          "cSharpName": "StudioNightlight"
+        },
+        {
+          "id": "scene.studio_read",
+          "friendlyName": "Studio Read",
+          "cSharpName": "StudioRead"
+        },
+        {
+          "id": "scene.studio_relax",
+          "friendlyName": "Studio Relax",
+          "cSharpName": "StudioRelax"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "group_name",
+          "cSharpName": "GroupName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "group_type",
+          "cSharpName": "GroupType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "name",
+          "cSharpName": "Name",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "speed",
+          "cSharpName": "Speed",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "brightness",
+          "cSharpName": "Brightness",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "is_dynamic",
+          "cSharpName": "IsDynamic",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "script",
+      "entities": [
+        {
+          "id": "script.arr_stack_start",
+          "friendlyName": "arr_stack_start",
+          "cSharpName": "ArrStackStart"
+        },
+        {
+          "id": "script.arr_stack_stop",
+          "friendlyName": "arr_stack_stop",
+          "cSharpName": "ArrStackStop"
+        },
+        {
+          "id": "script.gluetun_vpn_starten",
+          "friendlyName": "Gluetun VPN starten",
+          "cSharpName": "GluetunVpnStarten"
+        },
+        {
+          "id": "script.heizung_an",
+          "friendlyName": "heizung_an",
+          "cSharpName": "HeizungAn"
+        },
+        {
+          "id": "script.heizung_aus",
+          "friendlyName": "heizung_aus",
+          "cSharpName": "HeizungAus"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "last_triggered",
+          "cSharpName": "LastTriggered",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "mode",
+          "cSharpName": "Mode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "current",
+          "cSharpName": "Current",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "select",
+      "entities": [
+        {
+          "id": "select.solarbank_2_e1600_pro_benutzermodus",
+          "friendlyName": "Solarbank 2 E1600 Pro Benutzermodus",
+          "cSharpName": "Solarbank2E1600ProBenutzermodus"
+        },
+        {
+          "id": "select.solarbank_2_e1600_pro_ladestandreserve",
+          "friendlyName": "Solarbank 2 E1600 Pro Ladestandreserve",
+          "cSharpName": "Solarbank2E1600ProLadestandreserve"
+        },
+        {
+          "id": "select.system_home_preis_typ",
+          "friendlyName": "System Home  Preis Typ",
+          "cSharpName": "SystemHomePreisTyp"
+        },
+        {
+          "id": "select.system_home_preis_wahrung",
+          "friendlyName": "System Home  Preis W\u00E4hrung",
+          "cSharpName": "SystemHomePreisWahrung"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "options",
+          "cSharpName": "Options",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "type",
+          "cSharpName": "Type",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "current_mode",
+          "cSharpName": "CurrentMode",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "unit_of_measurement",
+          "cSharpName": "UnitOfMeasurement",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "mode",
+          "cSharpName": "Mode",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "sensor",
+      "entities": [
+        {
+          "id": "sensor.adguard_lan_maximale_cpu_leistung",
+          "friendlyName": "adguard.lan Maximale CPU-Leistung",
+          "cSharpName": "AdguardLanMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.adguard_lan_status",
+          "friendlyName": "adguard.lan Status",
+          "cSharpName": "AdguardLanStatus"
+        },
+        {
+          "id": "sensor.adobe_maximale_cpu_leistung",
+          "friendlyName": "adobe Maximale CPU-Leistung",
+          "cSharpName": "AdobeMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.adobe_status",
+          "friendlyName": "adobe Status",
+          "cSharpName": "AdobeStatus"
+        },
+        {
+          "id": "sensor.authentik_maximale_cpu_leistung",
+          "friendlyName": "authentik Maximale CPU-Leistung",
+          "cSharpName": "AuthentikMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.authentik_status",
+          "friendlyName": "authentik Status",
+          "cSharpName": "AuthentikStatus"
+        },
+        {
+          "id": "sensor.backup_backup_manager_zustand",
+          "friendlyName": "Backup Backup-Manager-Zustand",
+          "cSharpName": "BackupBackupManagerZustand"
+        },
+        {
+          "id": "sensor.backup_letztes_erfolgreiches_automatisches_backup",
+          "friendlyName": "Backup Letztes erfolgreiches automatisches Backup",
+          "cSharpName": "BackupLetztesErfolgreichesAutomatischesBackup"
+        },
+        {
+          "id": "sensor.backup_nachstes_geplantes_automatisches_backup",
+          "friendlyName": "Backup N\u00E4chstes geplantes automatisches Backup",
+          "cSharpName": "BackupNachstesGeplantesAutomatischesBackup"
+        },
+        {
+          "id": "sensor.backup_zuletzt_versuchtes_automatisches_backup",
+          "friendlyName": "Backup Letztes versuchtes automatisches Backup",
+          "cSharpName": "BackupZuletztVersuchtesAutomatischesBackup"
+        },
+        {
+          "id": "sensor.docker_maximale_cpu_leistung",
+          "friendlyName": "docker Maximale CPU-Leistung",
+          "cSharpName": "DockerMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.docker_status",
+          "friendlyName": "docker Status",
+          "cSharpName": "DockerStatus"
+        },
+        {
+          "id": "sensor.fritz_box_7590_externe_ip",
+          "friendlyName": "FRITZ!Box 7590 Externe IP",
+          "cSharpName": "FritzBox7590ExterneIp"
+        },
+        {
+          "id": "sensor.fritz_box_7590_externe_ipv6",
+          "friendlyName": "Externe IPv6",
+          "cSharpName": "FritzBox7590ExterneIpv6"
+        },
+        {
+          "id": "sensor.fritz_box_7590_letzter_neustart",
+          "friendlyName": "FRITZ!Box 7590 Letzter Neustart",
+          "cSharpName": "FritzBox7590LetzterNeustart"
+        },
+        {
+          "id": "sensor.fritz_box_7590_verbindungsverfugbarkeit",
+          "friendlyName": "FRITZ!Box 7590 Verbindungsverf\u00FCgbarkeit",
+          "cSharpName": "FritzBox7590Verbindungsverfugbarkeit"
+        },
+        {
+          "id": "sensor.galaxys8_battery_state",
+          "friendlyName": "GalaxyS8 Battery state",
+          "cSharpName": "Galaxys8BatteryState"
+        },
+        {
+          "id": "sensor.galaxys8_charger_type",
+          "friendlyName": "GalaxyS8 Charger type",
+          "cSharpName": "Galaxys8ChargerType"
+        },
+        {
+          "id": "sensor.gluetun_maximale_cpu_leistung",
+          "friendlyName": "gluetun Maximale CPU-Leistung",
+          "cSharpName": "GluetunMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.gluetun_status",
+          "friendlyName": "gluetun Status",
+          "cSharpName": "GluetunStatus"
+        },
+        {
+          "id": "sensor.gluetun_vpn_status",
+          "friendlyName": "gluetun_vpn_status",
+          "cSharpName": "GluetunVpnStatus"
+        },
+        {
+          "id": "sensor.haos_maximale_cpu_leistung",
+          "friendlyName": "haos Maximale CPU-Leistung",
+          "cSharpName": "HaosMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.haos_status",
+          "friendlyName": "haos Status",
+          "cSharpName": "HaosStatus"
+        },
+        {
+          "id": "sensor.home_power_highest_peak_time_today",
+          "friendlyName": "Solar production forecast South H\u00F6chste Leistungsspitzenzeit - heute",
+          "cSharpName": "HomePowerHighestPeakTimeToday"
+        },
+        {
+          "id": "sensor.home_power_highest_peak_time_today_2",
+          "friendlyName": "Solar production forecast west H\u00F6chste Leistungsspitzenzeit - heute",
+          "cSharpName": "HomePowerHighestPeakTimeToday2"
+        },
+        {
+          "id": "sensor.home_power_highest_peak_time_tomorrow",
+          "friendlyName": "Solar production forecast South H\u00F6chste Leistungsspitzenzeit - morgen",
+          "cSharpName": "HomePowerHighestPeakTimeTomorrow"
+        },
+        {
+          "id": "sensor.home_power_highest_peak_time_tomorrow_2",
+          "friendlyName": "Solar production forecast west H\u00F6chste Leistungsspitzenzeit - morgen",
+          "cSharpName": "HomePowerHighestPeakTimeTomorrow2"
+        },
+        {
+          "id": "sensor.ipad_6_activity",
+          "friendlyName": "iPad (6) Activity",
+          "cSharpName": "Ipad6Activity"
+        },
+        {
+          "id": "sensor.ipad_6_app_version",
+          "friendlyName": "iPad (6) App Version",
+          "cSharpName": "Ipad6AppVersion"
+        },
+        {
+          "id": "sensor.ipad_6_battery_state",
+          "friendlyName": "iPad (6) Battery State",
+          "cSharpName": "Ipad6BatteryState"
+        },
+        {
+          "id": "sensor.ipad_6_bssid",
+          "friendlyName": "iPad (6) BSSID",
+          "cSharpName": "Ipad6Bssid"
+        },
+        {
+          "id": "sensor.ipad_6_connection_type",
+          "friendlyName": "iPad (6) Connection Type",
+          "cSharpName": "Ipad6ConnectionType"
+        },
+        {
+          "id": "sensor.ipad_6_geocoded_location",
+          "friendlyName": "iPad (6) Geocoded Location",
+          "cSharpName": "Ipad6GeocodedLocation"
+        },
+        {
+          "id": "sensor.ipad_6_last_update_trigger",
+          "friendlyName": "iPad (6) Last Update Trigger",
+          "cSharpName": "Ipad6LastUpdateTrigger"
+        },
+        {
+          "id": "sensor.ipad_6_location_permission",
+          "friendlyName": "iPad (6) Location permission",
+          "cSharpName": "Ipad6LocationPermission"
+        },
+        {
+          "id": "sensor.ipad_6_sim_1",
+          "friendlyName": "iPad (6) SIM 1",
+          "cSharpName": "Ipad6Sim1"
+        },
+        {
+          "id": "sensor.ipad_6_ssid",
+          "friendlyName": "iPad (6) SSID",
+          "cSharpName": "Ipad6Ssid"
+        },
+        {
+          "id": "sensor.ipad_audio_output",
+          "friendlyName": "iPad Audio Output",
+          "cSharpName": "IpadAudioOutput"
+        },
+        {
+          "id": "sensor.iphone_app_version",
+          "friendlyName": "iPhone App Version",
+          "cSharpName": "IphoneAppVersion"
+        },
+        {
+          "id": "sensor.iphone_audio_output",
+          "friendlyName": "iPhone Audio Output",
+          "cSharpName": "IphoneAudioOutput"
+        },
+        {
+          "id": "sensor.iphone_battery_state",
+          "friendlyName": "iPhone Battery State",
+          "cSharpName": "IphoneBatteryState"
+        },
+        {
+          "id": "sensor.iphone_bssid",
+          "friendlyName": "iPhone BSSID",
+          "cSharpName": "IphoneBssid"
+        },
+        {
+          "id": "sensor.iphone_connection_type",
+          "friendlyName": "iPhone Connection Type",
+          "cSharpName": "IphoneConnectionType"
+        },
+        {
+          "id": "sensor.iphone_geocoded_location",
+          "friendlyName": "iPhone Geocoded Location",
+          "cSharpName": "IphoneGeocodedLocation"
+        },
+        {
+          "id": "sensor.iphone_last_update_trigger",
+          "friendlyName": "iPhone Last Update Trigger",
+          "cSharpName": "IphoneLastUpdateTrigger"
+        },
+        {
+          "id": "sensor.iphone_location_permission",
+          "friendlyName": "iPhone Location permission",
+          "cSharpName": "IphoneLocationPermission"
+        },
+        {
+          "id": "sensor.iphone_sim_1",
+          "friendlyName": "iPhone SIM 1",
+          "cSharpName": "IphoneSim1"
+        },
+        {
+          "id": "sensor.iphone_sim_2",
+          "friendlyName": "iPhone SIM 2",
+          "cSharpName": "IphoneSim2"
+        },
+        {
+          "id": "sensor.iphone_ssid",
+          "friendlyName": "iPhone SSID",
+          "cSharpName": "IphoneSsid"
+        },
+        {
+          "id": "sensor.jellyfin_maximale_cpu_leistung",
+          "friendlyName": "jellyfin Maximale CPU-Leistung",
+          "cSharpName": "JellyfinMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.jellyfin_status",
+          "friendlyName": "jellyfin Status",
+          "cSharpName": "JellyfinStatus"
+        },
+        {
+          "id": "sensor.jellyseerr_maximale_cpu_leistung",
+          "friendlyName": "jellyseerr Maximale CPU-Leistung",
+          "cSharpName": "JellyseerrMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.jellyseerr_status",
+          "friendlyName": "jellyseerr Status",
+          "cSharpName": "JellyseerrStatus"
+        },
+        {
+          "id": "sensor.mkiphone_app_version",
+          "friendlyName": "MkiPhone App Version",
+          "cSharpName": "MkiphoneAppVersion"
+        },
+        {
+          "id": "sensor.mkiphone_audio_output",
+          "friendlyName": "MkiPhone Audio Output",
+          "cSharpName": "MkiphoneAudioOutput"
+        },
+        {
+          "id": "sensor.mkiphone_battery_state",
+          "friendlyName": "MkiPhone Battery State",
+          "cSharpName": "MkiphoneBatteryState"
+        },
+        {
+          "id": "sensor.mkiphone_bssid",
+          "friendlyName": "MkiPhone BSSID",
+          "cSharpName": "MkiphoneBssid"
+        },
+        {
+          "id": "sensor.mkiphone_connection_type",
+          "friendlyName": "MkiPhone Connection Type",
+          "cSharpName": "MkiphoneConnectionType"
+        },
+        {
+          "id": "sensor.mkiphone_geocoded_location",
+          "friendlyName": "MkiPhone Geocoded Location",
+          "cSharpName": "MkiphoneGeocodedLocation"
+        },
+        {
+          "id": "sensor.mkiphone_last_update_trigger",
+          "friendlyName": "MkiPhone Last Update Trigger",
+          "cSharpName": "MkiphoneLastUpdateTrigger"
+        },
+        {
+          "id": "sensor.mkiphone_location_permission",
+          "friendlyName": "MkiPhone Location permission",
+          "cSharpName": "MkiphoneLocationPermission"
+        },
+        {
+          "id": "sensor.mkiphone_sim_1",
+          "friendlyName": "MkiPhone SIM 1",
+          "cSharpName": "MkiphoneSim1"
+        },
+        {
+          "id": "sensor.mkiphone_sim_2",
+          "friendlyName": "MkiPhone SIM 2",
+          "cSharpName": "MkiphoneSim2"
+        },
+        {
+          "id": "sensor.mkiphone_ssid",
+          "friendlyName": "MkiPhone SSID",
+          "cSharpName": "MkiphoneSsid"
+        },
+        {
+          "id": "sensor.mkiphone_watch_battery_state",
+          "friendlyName": "MkiPhone Watch Battery State",
+          "cSharpName": "MkiphoneWatchBatteryState"
+        },
+        {
+          "id": "sensor.nextcloud_maximale_cpu_leistung",
+          "friendlyName": "nextcloud Maximale CPU-Leistung",
+          "cSharpName": "NextcloudMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.nextcloud_status",
+          "friendlyName": "nextcloud Status",
+          "cSharpName": "NextcloudStatus"
+        },
+        {
+          "id": "sensor.nginx_lan_maximale_cpu_leistung",
+          "friendlyName": "nginx.lan Maximale CPU-Leistung",
+          "cSharpName": "NginxLanMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.nginx_lan_status",
+          "friendlyName": "nginx.lan Status",
+          "cSharpName": "NginxLanStatus"
+        },
+        {
+          "id": "sensor.power_highest_peak_time_today",
+          "friendlyName": "Solar production forecast Spitzenleistungszeitpunkt - heute",
+          "cSharpName": "PowerHighestPeakTimeToday"
+        },
+        {
+          "id": "sensor.power_highest_peak_time_today_2",
+          "friendlyName": "Solar production forecast Spitzenleistungszeitpunkt - heute",
+          "cSharpName": "PowerHighestPeakTimeToday2"
+        },
+        {
+          "id": "sensor.power_highest_peak_time_tomorrow",
+          "friendlyName": "Solar production forecast Spitzenleistungszeitpunkt - morgen",
+          "cSharpName": "PowerHighestPeakTimeTomorrow"
+        },
+        {
+          "id": "sensor.power_highest_peak_time_tomorrow_2",
+          "friendlyName": "Solar production forecast Spitzenleistungszeitpunkt - morgen",
+          "cSharpName": "PowerHighestPeakTimeTomorrow2"
+        },
+        {
+          "id": "sensor.prowlarr_maximale_cpu_leistung",
+          "friendlyName": "prowlarr Maximale CPU-Leistung",
+          "cSharpName": "ProwlarrMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.prowlarr_status",
+          "friendlyName": "prowlarr Status",
+          "cSharpName": "ProwlarrStatus"
+        },
+        {
+          "id": "sensor.pve_maximale_cpu_leistung",
+          "friendlyName": "pve Maximale CPU-Leistung",
+          "cSharpName": "PveMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.pve_status",
+          "friendlyName": "pve Status",
+          "cSharpName": "PveStatus"
+        },
+        {
+          "id": "sensor.radarr_maximale_cpu_leistung",
+          "friendlyName": "radarr Maximale CPU-Leistung",
+          "cSharpName": "RadarrMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.radarr_status",
+          "friendlyName": "radarr Status",
+          "cSharpName": "RadarrStatus"
+        },
+        {
+          "id": "sensor.sab_anzahl_der_warteschlangen",
+          "friendlyName": "Anzahl der Warteschlangen",
+          "cSharpName": "SabAnzahlDerWarteschlangen"
+        },
+        {
+          "id": "sensor.sab_status",
+          "friendlyName": "Status",
+          "cSharpName": "SabStatus"
+        },
+        {
+          "id": "sensor.sabnzbd_maximale_cpu_leistung",
+          "friendlyName": "sabnzbd Maximale CPU-Leistung",
+          "cSharpName": "SabnzbdMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.sabnzbd_status",
+          "friendlyName": "sabnzbd Status",
+          "cSharpName": "SabnzbdStatus"
+        },
+        {
+          "id": "sensor.sb_pv_leistung_geglattet",
+          "friendlyName": "SB PV Leistung Geglaettet",
+          "cSharpName": "SbPvLeistungGeglattet"
+        },
+        {
+          "id": "sensor.sb_pv_leistung_geglattet_2",
+          "friendlyName": "SB PV Leistung Gegl\u00E4ttet",
+          "cSharpName": "SbPvLeistungGeglattet2"
+        },
+        {
+          "id": "sensor.smart_power_switch_config_overtemp_type",
+          "friendlyName": "smart_power_switch Config overtemp type",
+          "cSharpName": "SmartPowerSwitchConfigOvertempType"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_betriebszustand",
+          "friendlyName": "Solarbank 2 E1600 Pro Betriebszustand",
+          "cSharpName": "Solarbank2E1600ProBetriebszustand"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_cloud_zustand",
+          "friendlyName": "Solarbank 2 E1600 Pro Cloud Zustand",
+          "cSharpName": "Solarbank2E1600ProCloudZustand"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_fehlercode",
+          "friendlyName": "Solarbank 2 E1600 Pro Fehlercode",
+          "cSharpName": "Solarbank2E1600ProFehlercode"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_firmware",
+          "friendlyName": "Solarbank 2 E1600 Pro Firmware",
+          "cSharpName": "Solarbank2E1600ProFirmware"
+        },
+        {
+          "id": "sensor.sonarr_maximale_cpu_leistung",
+          "friendlyName": "sonarr Maximale CPU-Leistung",
+          "cSharpName": "SonarrMaximaleCpuLeistung"
+        },
+        {
+          "id": "sensor.sonarr_status",
+          "friendlyName": "sonarr Status",
+          "cSharpName": "SonarrStatus"
+        },
+        {
+          "id": "sensor.sun_next_dawn",
+          "friendlyName": "Sun N\u00E4chste Morgend\u00E4mmerung",
+          "cSharpName": "SunNextDawn"
+        },
+        {
+          "id": "sensor.sun_next_dusk",
+          "friendlyName": "Sun N\u00E4chste Abendd\u00E4mmerung",
+          "cSharpName": "SunNextDusk"
+        },
+        {
+          "id": "sensor.sun_next_midnight",
+          "friendlyName": "Sun N\u00E4chste Mitternacht",
+          "cSharpName": "SunNextMidnight"
+        },
+        {
+          "id": "sensor.sun_next_noon",
+          "friendlyName": "Sun N\u00E4chster H\u00F6chststand",
+          "cSharpName": "SunNextNoon"
+        },
+        {
+          "id": "sensor.sun_next_rising",
+          "friendlyName": "Sun N\u00E4chster Aufgang",
+          "cSharpName": "SunNextRising"
+        },
+        {
+          "id": "sensor.sun_next_setting",
+          "friendlyName": "Sun N\u00E4chster Untergang",
+          "cSharpName": "SunNextSetting"
+        },
+        {
+          "id": "sensor.system_home_aktiver_benutzermodus",
+          "friendlyName": "System Home  Aktiver Benutzermodus",
+          "cSharpName": "SystemHomeAktiverBenutzermodus"
+        },
+        {
+          "id": "sensor.system_home_sb_datenzeit",
+          "friendlyName": "System Home  SB Datenzeit",
+          "cSharpName": "SystemHomeSbDatenzeit"
+        },
+        {
+          "id": "sensor.system_home_solarbanke",
+          "friendlyName": "System Home  Solarb\u00E4nke",
+          "cSharpName": "SystemHomeSolarbanke"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "options",
+          "cSharpName": "Options",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Low Power Mode",
+          "cSharpName": "LowPowerMode",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "Confidence",
+          "cSharpName": "Confidence",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Types",
+          "cSharpName": "Types",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "Allows VoIP",
+          "cSharpName": "AllowsVoIP",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "Carrier ID",
+          "cSharpName": "CarrierID",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Carrier Name",
+          "cSharpName": "CarrierName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "ISO Country Code",
+          "cSharpName": "ISOCountryCode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Mobile Country Code",
+          "cSharpName": "MobileCountryCode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Mobile Network Code",
+          "cSharpName": "MobileNetworkCode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Administrative Area",
+          "cSharpName": "AdministrativeArea",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Areas Of Interest",
+          "cSharpName": "AreasOfInterest",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Country",
+          "cSharpName": "Country",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Inland Water",
+          "cSharpName": "InlandWater",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Locality",
+          "cSharpName": "Locality",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Location",
+          "cSharpName": "Location",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
+        },
+        {
+          "jsonName": "Name",
+          "cSharpName": "Name",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Ocean",
+          "cSharpName": "Ocean",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Postal Code",
+          "cSharpName": "PostalCode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Sub Administrative Area",
+          "cSharpName": "SubAdministrativeArea",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Sub Locality",
+          "cSharpName": "SubLocality",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Sub Thoroughfare",
+          "cSharpName": "SubThoroughfare",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Thoroughfare",
+          "cSharpName": "Thoroughfare",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Time Zone",
+          "cSharpName": "TimeZone",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Zones",
+          "cSharpName": "Zones",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "Current Radio Technology",
+          "cSharpName": "CurrentRadioTechnology",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "tz_offset_sec",
+          "cSharpName": "TzOffsetSec",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "mode_type",
+          "cSharpName": "ModeType",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "status",
+          "cSharpName": "Status",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "charging_status",
+          "cSharpName": "ChargingStatus",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "state_class",
+          "cSharpName": "StateClass",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "sensor",
+      "isNumeric": true,
+      "entities": [
+        {
+          "id": "sensor.adguard_home_dns_abfragen",
+          "friendlyName": "AdGuard Home DNS-Abfragen",
+          "cSharpName": "AdguardHomeDnsAbfragen"
+        },
+        {
+          "id": "sensor.adguard_home_dns_abfragen_blockiert",
+          "friendlyName": "AdGuard Home Blockierte DNS-Abfragen",
+          "cSharpName": "AdguardHomeDnsAbfragenBlockiert"
+        },
+        {
+          "id": "sensor.adguard_home_durchschnittliche_verarbeitungsgeschwindigkeit",
+          "friendlyName": "AdGuard Home Durchschnittliche Verarbeitungsgeschwindigkeit",
+          "cSharpName": "AdguardHomeDurchschnittlicheVerarbeitungsgeschwindigkeit"
+        },
+        {
+          "id": "sensor.adguard_home_kindersicherung_blockiert",
+          "friendlyName": "AdGuard Home Durch Jugendschutz blockiert",
+          "cSharpName": "AdguardHomeKindersicherungBlockiert"
+        },
+        {
+          "id": "sensor.adguard_home_sichere_suchvorgange_erzwungen",
+          "friendlyName": "AdGuard Home Sichere Suchvorg\u00E4nge erzwungen",
+          "cSharpName": "AdguardHomeSichereSuchvorgangeErzwungen"
+        },
+        {
+          "id": "sensor.adguard_home_sicheres_surfen_blockiert",
+          "friendlyName": "AdGuard Home Durch Safe Browsing blockiert",
+          "cSharpName": "AdguardHomeSicheresSurfenBlockiert"
+        },
+        {
+          "id": "sensor.adguard_home_sperrverhaltnis_fur_dns_abfragen",
+          "friendlyName": "AdGuard Home Anteil blockierter DNS-Abfragen",
+          "cSharpName": "AdguardHomeSperrverhaltnisFurDnsAbfragen"
+        },
+        {
+          "id": "sensor.adguard_lan_arbeitsspeicher_auslastung",
+          "friendlyName": "adguard.lan Arbeitsspeicher-Auslastung",
+          "cSharpName": "AdguardLanArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adguard_lan_cpu_auslastung",
+          "friendlyName": "adguard.lan CPU-Auslastung",
+          "cSharpName": "AdguardLanCpuAuslastung"
+        },
+        {
+          "id": "sensor.adguard_lan_massenspeicher_auslastung",
+          "friendlyName": "adguard.lan Massenspeicher-Auslastung",
+          "cSharpName": "AdguardLanMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adguard_lan_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "adguard.lan Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "AdguardLanMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adguard_lan_maximale_massenspeicher_auslastung",
+          "friendlyName": "adguard.lan Maximale Massenspeicher-Auslastung",
+          "cSharpName": "AdguardLanMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adobe_arbeitsspeicher_auslastung",
+          "friendlyName": "adobe Arbeitsspeicher-Auslastung",
+          "cSharpName": "AdobeArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adobe_cpu_auslastung",
+          "friendlyName": "adobe CPU-Auslastung",
+          "cSharpName": "AdobeCpuAuslastung"
+        },
+        {
+          "id": "sensor.adobe_massenspeicher_auslastung",
+          "friendlyName": "adobe Massenspeicher-Auslastung",
+          "cSharpName": "AdobeMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adobe_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "adobe Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "AdobeMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.adobe_maximale_massenspeicher_auslastung",
+          "friendlyName": "adobe Maximale Massenspeicher-Auslastung",
+          "cSharpName": "AdobeMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.ausentemperatur_batterie",
+          "friendlyName": "Au\u00DFentemperatur Batterie",
+          "cSharpName": "AusentemperaturBatterie"
+        },
+        {
+          "id": "sensor.ausentemperatur_druck",
+          "friendlyName": "Au\u00DFentemperatur Druck",
+          "cSharpName": "AusentemperaturDruck"
+        },
+        {
+          "id": "sensor.ausentemperatur_luftfeuchtigkeit",
+          "friendlyName": "Au\u00DFentemperatur Luftfeuchtigkeit",
+          "cSharpName": "AusentemperaturLuftfeuchtigkeit"
+        },
+        {
+          "id": "sensor.ausentemperatur_temperatur",
+          "friendlyName": "Au\u00DFentemperatur Temperatur",
+          "cSharpName": "AusentemperaturTemperatur"
+        },
+        {
+          "id": "sensor.authentik_arbeitsspeicher_auslastung",
+          "friendlyName": "authentik Arbeitsspeicher-Auslastung",
+          "cSharpName": "AuthentikArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.authentik_cpu_auslastung",
+          "friendlyName": "authentik CPU-Auslastung",
+          "cSharpName": "AuthentikCpuAuslastung"
+        },
+        {
+          "id": "sensor.authentik_massenspeicher_auslastung",
+          "friendlyName": "authentik Massenspeicher-Auslastung",
+          "cSharpName": "AuthentikMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.authentik_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "authentik Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "AuthentikMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.authentik_maximale_massenspeicher_auslastung",
+          "friendlyName": "authentik Maximale Massenspeicher-Auslastung",
+          "cSharpName": "AuthentikMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.daily_energy_pv1",
+          "friendlyName": "Daily Energy PV1",
+          "cSharpName": "DailyEnergyPv1"
+        },
+        {
+          "id": "sensor.daily_energy_pv2",
+          "friendlyName": "Daily Energy PV2",
+          "cSharpName": "DailyEnergyPv2"
+        },
+        {
+          "id": "sensor.daily_energy_pv3",
+          "friendlyName": "Daily Energy PV3",
+          "cSharpName": "DailyEnergyPv3"
+        },
+        {
+          "id": "sensor.daily_energy_pv4",
+          "friendlyName": "Daily Energy PV4",
+          "cSharpName": "DailyEnergyPv4"
+        },
+        {
+          "id": "sensor.docker_arbeitsspeicher_auslastung",
+          "friendlyName": "docker Arbeitsspeicher-Auslastung",
+          "cSharpName": "DockerArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.docker_cpu_auslastung",
+          "friendlyName": "docker CPU-Auslastung",
+          "cSharpName": "DockerCpuAuslastung"
+        },
+        {
+          "id": "sensor.docker_massenspeicher_auslastung",
+          "friendlyName": "docker Massenspeicher-Auslastung",
+          "cSharpName": "DockerMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.docker_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "docker Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "DockerMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.docker_maximale_massenspeicher_auslastung",
+          "friendlyName": "docker Maximale Massenspeicher-Auslastung",
+          "cSharpName": "DockerMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.energy_current_hour",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 diese Stunde",
+          "cSharpName": "EnergyCurrentHour"
+        },
+        {
+          "id": "sensor.energy_current_hour_2",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 diese Stunde",
+          "cSharpName": "EnergyCurrentHour2"
+        },
+        {
+          "id": "sensor.energy_next_hour",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 n\u00E4chste Stunde",
+          "cSharpName": "EnergyNextHour"
+        },
+        {
+          "id": "sensor.energy_next_hour_2",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 n\u00E4chste Stunde",
+          "cSharpName": "EnergyNextHour2"
+        },
+        {
+          "id": "sensor.energy_production_today",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 heute",
+          "cSharpName": "EnergyProductionToday"
+        },
+        {
+          "id": "sensor.energy_production_today_2",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 heute",
+          "cSharpName": "EnergyProductionToday2"
+        },
+        {
+          "id": "sensor.energy_production_today_remaining",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 Resttag heute",
+          "cSharpName": "EnergyProductionTodayRemaining"
+        },
+        {
+          "id": "sensor.energy_production_today_remaining_2",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 Resttag heute",
+          "cSharpName": "EnergyProductionTodayRemaining2"
+        },
+        {
+          "id": "sensor.energy_production_tomorrow",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 morgen",
+          "cSharpName": "EnergyProductionTomorrow"
+        },
+        {
+          "id": "sensor.energy_production_tomorrow_2",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Energieerzeugung \u2013 morgen",
+          "cSharpName": "EnergyProductionTomorrow2"
+        },
+        {
+          "id": "sensor.esszimmer_battery",
+          "friendlyName": "Esszimmer Batterie",
+          "cSharpName": "EsszimmerBattery"
+        },
+        {
+          "id": "sensor.fritz_box_7590_cpu_temperatur",
+          "friendlyName": "FRITZ!Box 7590 CPU-Temperatur",
+          "cSharpName": "FritzBox7590CpuTemperatur"
+        },
+        {
+          "id": "sensor.fritz_box_7590_download_durchsatz",
+          "friendlyName": "FRITZ!Box 7590 Download-Durchsatz",
+          "cSharpName": "FritzBox7590DownloadDurchsatz"
+        },
+        {
+          "id": "sensor.fritz_box_7590_gb_empfangen",
+          "friendlyName": "FRITZ!Box 7590 GB empfangen",
+          "cSharpName": "FritzBox7590GbEmpfangen"
+        },
+        {
+          "id": "sensor.fritz_box_7590_gb_gesendet",
+          "friendlyName": "FRITZ!Box 7590 GB gesendet",
+          "cSharpName": "FritzBox7590GbGesendet"
+        },
+        {
+          "id": "sensor.fritz_box_7590_link_download_durchsatz",
+          "friendlyName": "FRITZ!Box 7590 Link-Download-Durchsatz",
+          "cSharpName": "FritzBox7590LinkDownloadDurchsatz"
+        },
+        {
+          "id": "sensor.fritz_box_7590_link_download_leistungsdampfung",
+          "friendlyName": "FRITZ!Box 7590 Download-Leitungsd\u00E4mpfung",
+          "cSharpName": "FritzBox7590LinkDownloadLeistungsdampfung"
+        },
+        {
+          "id": "sensor.fritz_box_7590_link_upload_durchsatz",
+          "friendlyName": "FRITZ!Box 7590 Link-Upload-Durchsatz",
+          "cSharpName": "FritzBox7590LinkUploadDurchsatz"
+        },
+        {
+          "id": "sensor.fritz_box_7590_link_upload_leistungsdampfung",
+          "friendlyName": "FRITZ!Box 7590 Upload-Leitungsd\u00E4mpfung",
+          "cSharpName": "FritzBox7590LinkUploadLeistungsdampfung"
+        },
+        {
+          "id": "sensor.fritz_box_7590_maximaler_download_durchsatz_der_verbindung",
+          "friendlyName": "FRITZ!Box 7590 Maximaler Download-Durchsatz der Verbindung",
+          "cSharpName": "FritzBox7590MaximalerDownloadDurchsatzDerVerbindung"
+        },
+        {
+          "id": "sensor.fritz_box_7590_maximaler_upload_durchsatz_der_verbindung",
+          "friendlyName": "FRITZ!Box 7590 Maximaler Upload-Durchsatz der Verbindung",
+          "cSharpName": "FritzBox7590MaximalerUploadDurchsatzDerVerbindung"
+        },
+        {
+          "id": "sensor.fritz_box_7590_rauschabstand_zum_link_download",
+          "friendlyName": "FRITZ!Box 7590 Link-Download-Rauschabstand",
+          "cSharpName": "FritzBox7590RauschabstandZumLinkDownload"
+        },
+        {
+          "id": "sensor.fritz_box_7590_rauschabstand_zum_link_upload",
+          "friendlyName": "FRITZ!Box 7590 Link-Upload-Rauschabstand",
+          "cSharpName": "FritzBox7590RauschabstandZumLinkUpload"
+        },
+        {
+          "id": "sensor.fritz_box_7590_upload_durchsatz",
+          "friendlyName": "FRITZ!Box 7590 Upload-Durchsatz",
+          "cSharpName": "FritzBox7590UploadDurchsatz"
+        },
+        {
+          "id": "sensor.galaxys8_battery_level",
+          "friendlyName": "GalaxyS8 Battery level",
+          "cSharpName": "Galaxys8BatteryLevel"
+        },
+        {
+          "id": "sensor.gluetun_arbeitsspeicher_auslastung",
+          "friendlyName": "gluetun Arbeitsspeicher-Auslastung",
+          "cSharpName": "GluetunArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.gluetun_cpu_auslastung",
+          "friendlyName": "gluetun CPU-Auslastung",
+          "cSharpName": "GluetunCpuAuslastung"
+        },
+        {
+          "id": "sensor.gluetun_massenspeicher_auslastung",
+          "friendlyName": "gluetun Massenspeicher-Auslastung",
+          "cSharpName": "GluetunMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.gluetun_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "gluetun Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "GluetunMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.gluetun_maximale_massenspeicher_auslastung",
+          "friendlyName": "gluetun Maximale Massenspeicher-Auslastung",
+          "cSharpName": "GluetunMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.haos_arbeitsspeicher_auslastung",
+          "friendlyName": "haos Arbeitsspeicher-Auslastung",
+          "cSharpName": "HaosArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.haos_cpu_auslastung",
+          "friendlyName": "haos CPU-Auslastung",
+          "cSharpName": "HaosCpuAuslastung"
+        },
+        {
+          "id": "sensor.haos_massenspeicher_auslastung",
+          "friendlyName": "haos Massenspeicher-Auslastung",
+          "cSharpName": "HaosMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.haos_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "haos Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "HaosMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.haos_maximale_massenspeicher_auslastung",
+          "friendlyName": "haos Maximale Massenspeicher-Auslastung",
+          "cSharpName": "HaosMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.home_energy_current_hour",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion \u2013 diese Stunde",
+          "cSharpName": "HomeEnergyCurrentHour"
+        },
+        {
+          "id": "sensor.home_energy_current_hour_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion \u2013 diese Stunde",
+          "cSharpName": "HomeEnergyCurrentHour2"
+        },
+        {
+          "id": "sensor.home_energy_next_hour",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion \u2013 n\u00E4chste Stunde",
+          "cSharpName": "HomeEnergyNextHour"
+        },
+        {
+          "id": "sensor.home_energy_next_hour_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion \u2013 n\u00E4chste Stunde",
+          "cSharpName": "HomeEnergyNextHour2"
+        },
+        {
+          "id": "sensor.home_energy_production_d2",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion - \u00FCbermorgen",
+          "cSharpName": "HomeEnergyProductionD2"
+        },
+        {
+          "id": "sensor.home_energy_production_d2_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion - \u00FCbermorgen",
+          "cSharpName": "HomeEnergyProductionD22"
+        },
+        {
+          "id": "sensor.home_energy_production_d3",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion - in 3 Tagen",
+          "cSharpName": "HomeEnergyProductionD3"
+        },
+        {
+          "id": "sensor.home_energy_production_d3_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion - in 3 Tagen",
+          "cSharpName": "HomeEnergyProductionD32"
+        },
+        {
+          "id": "sensor.home_energy_production_d4",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion - in 4 Tagen",
+          "cSharpName": "HomeEnergyProductionD4"
+        },
+        {
+          "id": "sensor.home_energy_production_d4_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion - in 4 Tagen",
+          "cSharpName": "HomeEnergyProductionD42"
+        },
+        {
+          "id": "sensor.home_energy_production_d5",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion - in 5 Tagen",
+          "cSharpName": "HomeEnergyProductionD5"
+        },
+        {
+          "id": "sensor.home_energy_production_d5_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion - in 5 Tagen",
+          "cSharpName": "HomeEnergyProductionD52"
+        },
+        {
+          "id": "sensor.home_energy_production_d6",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion - in 6 Tagen",
+          "cSharpName": "HomeEnergyProductionD6"
+        },
+        {
+          "id": "sensor.home_energy_production_d6_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion - in 6 Tagen",
+          "cSharpName": "HomeEnergyProductionD62"
+        },
+        {
+          "id": "sensor.home_energy_production_d7",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion - in 7 Tagen",
+          "cSharpName": "HomeEnergyProductionD7"
+        },
+        {
+          "id": "sensor.home_energy_production_d7_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion - in 7 Tagen",
+          "cSharpName": "HomeEnergyProductionD72"
+        },
+        {
+          "id": "sensor.home_energy_production_today",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion \u2013 heute",
+          "cSharpName": "HomeEnergyProductionToday"
+        },
+        {
+          "id": "sensor.home_energy_production_today_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion \u2013 heute",
+          "cSharpName": "HomeEnergyProductionToday2"
+        },
+        {
+          "id": "sensor.home_energy_production_today_remaining",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion \u2013 heute noch verbleibend",
+          "cSharpName": "HomeEnergyProductionTodayRemaining"
+        },
+        {
+          "id": "sensor.home_energy_production_today_remaining_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion \u2013 heute noch verbleibend",
+          "cSharpName": "HomeEnergyProductionTodayRemaining2"
+        },
+        {
+          "id": "sensor.home_energy_production_tomorrow",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Energieproduktion \u2013 morgen",
+          "cSharpName": "HomeEnergyProductionTomorrow"
+        },
+        {
+          "id": "sensor.home_energy_production_tomorrow_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Energieproduktion \u2013 morgen",
+          "cSharpName": "HomeEnergyProductionTomorrow2"
+        },
+        {
+          "id": "sensor.home_power_production_now",
+          "friendlyName": "Solar production forecast South Gesch\u00E4tzte Stromproduktion \u2013 jetzt",
+          "cSharpName": "HomePowerProductionNow"
+        },
+        {
+          "id": "sensor.home_power_production_now_2",
+          "friendlyName": "Solar production forecast west Gesch\u00E4tzte Stromproduktion \u2013 jetzt",
+          "cSharpName": "HomePowerProductionNow2"
+        },
+        {
+          "id": "sensor.ht_badezimmer_1_temperature",
+          "friendlyName": "ht_badezimmer_1 Temperature",
+          "cSharpName": "HtBadezimmer1Temperature"
+        },
+        {
+          "id": "sensor.ht_badezimmer_1_valvetappet",
+          "friendlyName": "ht_badezimmer_1 Valvetappet",
+          "cSharpName": "HtBadezimmer1Valvetappet"
+        },
+        {
+          "id": "sensor.ht_esszimmer_1_temperature",
+          "friendlyName": "ht_esszimmer_1 Temperature",
+          "cSharpName": "HtEsszimmer1Temperature"
+        },
+        {
+          "id": "sensor.ht_esszimmer_1_valvetappet",
+          "friendlyName": "ht_esszimmer_1 Valvetappet",
+          "cSharpName": "HtEsszimmer1Valvetappet"
+        },
+        {
+          "id": "sensor.ht_kuche_1_temperature",
+          "friendlyName": "ht_kuche_1 Temperature",
+          "cSharpName": "HtKuche1Temperature"
+        },
+        {
+          "id": "sensor.ht_kuche_1_valvetappet",
+          "friendlyName": "ht_kuche_1 Valvetappet",
+          "cSharpName": "HtKuche1Valvetappet"
+        },
+        {
+          "id": "sensor.ht_studio_giebel_temperature",
+          "friendlyName": "ht_studio_giebel Temperature",
+          "cSharpName": "HtStudioGiebelTemperature"
+        },
+        {
+          "id": "sensor.ht_studio_giebel_valvetappet",
+          "friendlyName": "ht_studio_giebel Valvetappet",
+          "cSharpName": "HtStudioGiebelValvetappet"
+        },
+        {
+          "id": "sensor.ht_studio_leseecke_temperature",
+          "friendlyName": "ht_studio_leseecke Temperature",
+          "cSharpName": "HtStudioLeseeckeTemperature"
+        },
+        {
+          "id": "sensor.ht_studio_leseecke_valvetappet",
+          "friendlyName": "ht_studio_leseecke Valvetappet",
+          "cSharpName": "HtStudioLeseeckeValvetappet"
+        },
+        {
+          "id": "sensor.hue_dimmer_switch_1_batterie",
+          "friendlyName": "Hue dimmer switch 1 Batterie",
+          "cSharpName": "HueDimmerSwitch1Batterie"
+        },
+        {
+          "id": "sensor.ipad_6_battery_level",
+          "friendlyName": "iPad (6) Battery Level",
+          "cSharpName": "Ipad6BatteryLevel"
+        },
+        {
+          "id": "sensor.ipad_6_storage",
+          "friendlyName": "iPad (6) Storage",
+          "cSharpName": "Ipad6Storage"
+        },
+        {
+          "id": "sensor.ipad_distance",
+          "friendlyName": "iPad Distance",
+          "cSharpName": "IpadDistance"
+        },
+        {
+          "id": "sensor.ipad_pressure",
+          "friendlyName": "iPad Pressure",
+          "cSharpName": "IpadPressure"
+        },
+        {
+          "id": "sensor.ipad_steps",
+          "friendlyName": "iPad Steps",
+          "cSharpName": "IpadSteps"
+        },
+        {
+          "id": "sensor.iphone_battery_level",
+          "friendlyName": "iPhone Battery Level",
+          "cSharpName": "IphoneBatteryLevel"
+        },
+        {
+          "id": "sensor.iphone_storage",
+          "friendlyName": "iPhone Storage",
+          "cSharpName": "IphoneStorage"
+        },
+        {
+          "id": "sensor.jellyfin_arbeitsspeicher_auslastung",
+          "friendlyName": "jellyfin Arbeitsspeicher-Auslastung",
+          "cSharpName": "JellyfinArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyfin_cpu_auslastung",
+          "friendlyName": "jellyfin CPU-Auslastung",
+          "cSharpName": "JellyfinCpuAuslastung"
+        },
+        {
+          "id": "sensor.jellyfin_massenspeicher_auslastung",
+          "friendlyName": "jellyfin Massenspeicher-Auslastung",
+          "cSharpName": "JellyfinMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyfin_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "jellyfin Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "JellyfinMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyfin_maximale_massenspeicher_auslastung",
+          "friendlyName": "jellyfin Maximale Massenspeicher-Auslastung",
+          "cSharpName": "JellyfinMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyseerr_arbeitsspeicher_auslastung",
+          "friendlyName": "jellyseerr Arbeitsspeicher-Auslastung",
+          "cSharpName": "JellyseerrArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyseerr_cpu_auslastung",
+          "friendlyName": "jellyseerr CPU-Auslastung",
+          "cSharpName": "JellyseerrCpuAuslastung"
+        },
+        {
+          "id": "sensor.jellyseerr_massenspeicher_auslastung",
+          "friendlyName": "jellyseerr Massenspeicher-Auslastung",
+          "cSharpName": "JellyseerrMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyseerr_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "jellyseerr Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "JellyseerrMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.jellyseerr_maximale_massenspeicher_auslastung",
+          "friendlyName": "jellyseerr Maximale Massenspeicher-Auslastung",
+          "cSharpName": "JellyseerrMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.mkiphone_battery_level",
+          "friendlyName": "MkiPhone Battery Level",
+          "cSharpName": "MkiphoneBatteryLevel"
+        },
+        {
+          "id": "sensor.mkiphone_storage",
+          "friendlyName": "MkiPhone Storage",
+          "cSharpName": "MkiphoneStorage"
+        },
+        {
+          "id": "sensor.mkiphone_watch_battery_level",
+          "friendlyName": "MkiPhone Watch Battery Level",
+          "cSharpName": "MkiphoneWatchBatteryLevel"
+        },
+        {
+          "id": "sensor.nextcloud_arbeitsspeicher_auslastung",
+          "friendlyName": "nextcloud Arbeitsspeicher-Auslastung",
+          "cSharpName": "NextcloudArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nextcloud_cpu_auslastung",
+          "friendlyName": "nextcloud CPU-Auslastung",
+          "cSharpName": "NextcloudCpuAuslastung"
+        },
+        {
+          "id": "sensor.nextcloud_massenspeicher_auslastung",
+          "friendlyName": "nextcloud Massenspeicher-Auslastung",
+          "cSharpName": "NextcloudMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nextcloud_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "nextcloud Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "NextcloudMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nextcloud_maximale_massenspeicher_auslastung",
+          "friendlyName": "nextcloud Maximale Massenspeicher-Auslastung",
+          "cSharpName": "NextcloudMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nginx_lan_arbeitsspeicher_auslastung",
+          "friendlyName": "nginx.lan Arbeitsspeicher-Auslastung",
+          "cSharpName": "NginxLanArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nginx_lan_cpu_auslastung",
+          "friendlyName": "nginx.lan CPU-Auslastung",
+          "cSharpName": "NginxLanCpuAuslastung"
+        },
+        {
+          "id": "sensor.nginx_lan_massenspeicher_auslastung",
+          "friendlyName": "nginx.lan Massenspeicher-Auslastung",
+          "cSharpName": "NginxLanMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nginx_lan_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "nginx.lan Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "NginxLanMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.nginx_lan_maximale_massenspeicher_auslastung",
+          "friendlyName": "nginx.lan Maximale Massenspeicher-Auslastung",
+          "cSharpName": "NginxLanMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.power_production_next_12hours",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Erzeugungsleistung \u2013 in 12 Stunden",
+          "cSharpName": "PowerProductionNext12hours"
+        },
+        {
+          "id": "sensor.power_production_now",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Erzeugungsleistung \u2013 jetzt",
+          "cSharpName": "PowerProductionNow"
+        },
+        {
+          "id": "sensor.power_production_now_2",
+          "friendlyName": "Solar production forecast Gesch\u00E4tzte Erzeugungsleistung \u2013 jetzt",
+          "cSharpName": "PowerProductionNow2"
+        },
+        {
+          "id": "sensor.prowlarr_arbeitsspeicher_auslastung",
+          "friendlyName": "prowlarr Arbeitsspeicher-Auslastung",
+          "cSharpName": "ProwlarrArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.prowlarr_cpu_auslastung",
+          "friendlyName": "prowlarr CPU-Auslastung",
+          "cSharpName": "ProwlarrCpuAuslastung"
+        },
+        {
+          "id": "sensor.prowlarr_massenspeicher_auslastung",
+          "friendlyName": "prowlarr Massenspeicher-Auslastung",
+          "cSharpName": "ProwlarrMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.prowlarr_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "prowlarr Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "ProwlarrMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.prowlarr_maximale_massenspeicher_auslastung",
+          "friendlyName": "prowlarr Maximale Massenspeicher-Auslastung",
+          "cSharpName": "ProwlarrMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.pv_power_smoothed",
+          "friendlyName": "pv power smoothed",
+          "cSharpName": "PvPowerSmoothed"
+        },
+        {
+          "id": "sensor.pve_arbeitsspeicher_auslastung",
+          "friendlyName": "pve Arbeitsspeicher-Auslastung",
+          "cSharpName": "PveArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.pve_cpu_auslastung",
+          "friendlyName": "pve CPU-Auslastung",
+          "cSharpName": "PveCpuAuslastung"
+        },
+        {
+          "id": "sensor.pve_massenspeicher_auslastung",
+          "friendlyName": "pve Massenspeicher-Auslastung",
+          "cSharpName": "PveMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.pve_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "pve Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "PveMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.pve_maximale_massenspeicher_auslastung",
+          "friendlyName": "pve Maximale Massenspeicher-Auslastung",
+          "cSharpName": "PveMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.radarr_arbeitsspeicher_auslastung",
+          "friendlyName": "radarr Arbeitsspeicher-Auslastung",
+          "cSharpName": "RadarrArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.radarr_cpu_auslastung",
+          "friendlyName": "radarr CPU-Auslastung",
+          "cSharpName": "RadarrCpuAuslastung"
+        },
+        {
+          "id": "sensor.radarr_massenspeicher_auslastung",
+          "friendlyName": "radarr Massenspeicher-Auslastung",
+          "cSharpName": "RadarrMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.radarr_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "radarr Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "RadarrMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.radarr_maximale_massenspeicher_auslastung",
+          "friendlyName": "radarr Maximale Massenspeicher-Auslastung",
+          "cSharpName": "RadarrMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sab_festplattenplatz_insgesamt",
+          "friendlyName": "Festplattenplatz insgesamt",
+          "cSharpName": "SabFestplattenplatzInsgesamt"
+        },
+        {
+          "id": "sensor.sab_freier_speicherplatz",
+          "friendlyName": "Freier Speicherplatz",
+          "cSharpName": "SabFreierSpeicherplatz"
+        },
+        {
+          "id": "sensor.sab_gesamtsumme",
+          "friendlyName": "Gesamtsumme",
+          "cSharpName": "SabGesamtsumme"
+        },
+        {
+          "id": "sensor.sab_geschwindigkeit",
+          "friendlyName": "Geschwindigkeit",
+          "cSharpName": "SabGeschwindigkeit"
+        },
+        {
+          "id": "sensor.sab_warteschlange",
+          "friendlyName": "Warteschlange",
+          "cSharpName": "SabWarteschlange"
+        },
+        {
+          "id": "sensor.sab_zum_herunterladen_ubrig",
+          "friendlyName": "Zum Herunterladen \u00FCbrig",
+          "cSharpName": "SabZumHerunterladenUbrig"
+        },
+        {
+          "id": "sensor.sabnzbd_arbeitsspeicher_auslastung",
+          "friendlyName": "sabnzbd Arbeitsspeicher-Auslastung",
+          "cSharpName": "SabnzbdArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sabnzbd_cpu_auslastung",
+          "friendlyName": "sabnzbd CPU-Auslastung",
+          "cSharpName": "SabnzbdCpuAuslastung"
+        },
+        {
+          "id": "sensor.sabnzbd_massenspeicher_auslastung",
+          "friendlyName": "sabnzbd Massenspeicher-Auslastung",
+          "cSharpName": "SabnzbdMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sabnzbd_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "sabnzbd Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "SabnzbdMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sabnzbd_maximale_massenspeicher_auslastung",
+          "friendlyName": "sabnzbd Maximale Massenspeicher-Auslastung",
+          "cSharpName": "SabnzbdMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sb_akku_fehlende_energie",
+          "friendlyName": "SB Akku Fehlende Energie",
+          "cSharpName": "SbAkkuFehlendeEnergie"
+        },
+        {
+          "id": "sensor.sb_empfohlenes_nacht_preset",
+          "friendlyName": "SB Empfohlenes Nacht Preset",
+          "cSharpName": "SbEmpfohlenesNachtPreset"
+        },
+        {
+          "id": "sensor.sb_finales_tages_preset",
+          "friendlyName": "SB Finales Tages Preset",
+          "cSharpName": "SbFinalesTagesPreset"
+        },
+        {
+          "id": "sensor.sb_optimales_tages_preset",
+          "friendlyName": "SB Optimales Tages Preset",
+          "cSharpName": "SbOptimalesTagesPreset"
+        },
+        {
+          "id": "sensor.sb_pv_leistung_geglaettet",
+          "friendlyName": "SB PV Leistung Geglaettet",
+          "cSharpName": "SbPvLeistungGeglaettet"
+        },
+        {
+          "id": "sensor.sb_pv_leistung_gesamt",
+          "friendlyName": "SB PV Leistung Gesamt",
+          "cSharpName": "SbPvLeistungGesamt"
+        },
+        {
+          "id": "sensor.sb_pv_prognose_morgen",
+          "friendlyName": "SB PV Prognose Morgen",
+          "cSharpName": "SbPvPrognoseMorgen"
+        },
+        {
+          "id": "sensor.sb_pv_restprognose_heute",
+          "friendlyName": "SB PV Restprognose Heute",
+          "cSharpName": "SbPvRestprognoseHeute"
+        },
+        {
+          "id": "sensor.sb_stunden_bis_sonnenuntergang",
+          "friendlyName": "SB Stunden Bis Sonnenuntergang",
+          "cSharpName": "SbStundenBisSonnenuntergang"
+        },
+        {
+          "id": "sensor.smart_power_switch_consumption",
+          "friendlyName": "smart_power_switch Consumption",
+          "cSharpName": "SmartPowerSwitchConsumption"
+        },
+        {
+          "id": "sensor.smart_power_switch_current",
+          "friendlyName": "smart_power_switch Current",
+          "cSharpName": "SmartPowerSwitchCurrent"
+        },
+        {
+          "id": "sensor.smart_power_switch_energy",
+          "friendlyName": "smart_power_switch Energy",
+          "cSharpName": "SmartPowerSwitchEnergy"
+        },
+        {
+          "id": "sensor.smart_power_switch_power",
+          "friendlyName": "smart_power_switch Power",
+          "cSharpName": "SmartPowerSwitchPower"
+        },
+        {
+          "id": "sensor.smart_power_switch_signal_strength",
+          "friendlyName": "smart_power_switch Signal strength",
+          "cSharpName": "SmartPowerSwitchSignalStrength"
+        },
+        {
+          "id": "sensor.smart_power_switch_voltage",
+          "friendlyName": "smart_power_switch Voltage",
+          "cSharpName": "SmartPowerSwitchVoltage"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_ac_hausabgabe",
+          "friendlyName": "Solarbank 2 E1600 Pro AC Hausabgabe",
+          "cSharpName": "Solarbank2E1600ProAcHausabgabe"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_ac_steckdose",
+          "friendlyName": "Solarbank 2 E1600 Pro AC Steckdose",
+          "cSharpName": "Solarbank2E1600ProAcSteckdose"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_akkuenergie",
+          "friendlyName": "Solarbank 2 E1600 Pro Akkuenergie",
+          "cSharpName": "Solarbank2E1600ProAkkuenergie"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_akkuleistung",
+          "friendlyName": "Solarbank 2 E1600 Pro Akkuleistung",
+          "cSharpName": "Solarbank2E1600ProAkkuleistung"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_aufladeleistung",
+          "friendlyName": "Solarbank 2 E1600 Pro Aufladeleistung",
+          "cSharpName": "Solarbank2E1600ProAufladeleistung"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_dc_ausgangsleistung",
+          "friendlyName": "Solarbank 2 E1600 Pro DC Ausgangsleistung",
+          "cSharpName": "Solarbank2E1600ProDcAusgangsleistung"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_einspeisevorgabe",
+          "friendlyName": "Solarbank 2 E1600 Pro Einspeisevorgabe",
+          "cSharpName": "Solarbank2E1600ProEinspeisevorgabe"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_entladeleistung",
+          "friendlyName": "Solarbank 2 E1600 Pro Entladeleistung",
+          "cSharpName": "Solarbank2E1600ProEntladeleistung"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_heizleistung",
+          "friendlyName": "Solarbank 2 E1600 Pro Heizleistung",
+          "cSharpName": "Solarbank2E1600ProHeizleistung"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_ladestand",
+          "friendlyName": "Solarbank 2 E1600 Pro Ladestand",
+          "cSharpName": "Solarbank2E1600ProLadestand"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_solar_pv1",
+          "friendlyName": "Solarbank 2 E1600 Pro Solar PV1",
+          "cSharpName": "Solarbank2E1600ProSolarPv1"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_solar_pv2",
+          "friendlyName": "Solarbank 2 E1600 Pro Solar PV2",
+          "cSharpName": "Solarbank2E1600ProSolarPv2"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_solar_pv3",
+          "friendlyName": "Solarbank 2 E1600 Pro Solar PV3",
+          "cSharpName": "Solarbank2E1600ProSolarPv3"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_solar_pv4",
+          "friendlyName": "Solarbank 2 E1600 Pro Solar PV4",
+          "cSharpName": "Solarbank2E1600ProSolarPv4"
+        },
+        {
+          "id": "sensor.solarbank_2_e1600_pro_solarleistung",
+          "friendlyName": "Solarbank 2 E1600 Pro Solarleistung",
+          "cSharpName": "Solarbank2E1600ProSolarleistung"
+        },
+        {
+          "id": "sensor.sonarr_arbeitsspeicher_auslastung",
+          "friendlyName": "sonarr Arbeitsspeicher-Auslastung",
+          "cSharpName": "SonarrArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sonarr_cpu_auslastung",
+          "friendlyName": "sonarr CPU-Auslastung",
+          "cSharpName": "SonarrCpuAuslastung"
+        },
+        {
+          "id": "sensor.sonarr_massenspeicher_auslastung",
+          "friendlyName": "sonarr Massenspeicher-Auslastung",
+          "cSharpName": "SonarrMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sonarr_maximale_arbeitsspeicher_auslastung",
+          "friendlyName": "sonarr Maximale Arbeitsspeicher-Auslastung",
+          "cSharpName": "SonarrMaximaleArbeitsspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sonarr_maximale_massenspeicher_auslastung",
+          "friendlyName": "sonarr Maximale Massenspeicher-Auslastung",
+          "cSharpName": "SonarrMaximaleMassenspeicherAuslastung"
+        },
+        {
+          "id": "sensor.sonos_favorites",
+          "friendlyName": "Sonos favorites",
+          "cSharpName": "SonosFavorites"
+        },
+        {
+          "id": "sensor.system_home_co2_einsparung",
+          "friendlyName": "System Home  CO\u2082 Einsparung",
+          "cSharpName": "SystemHomeCo2Einsparung"
+        },
+        {
+          "id": "sensor.system_home_ertrag_gesamt",
+          "friendlyName": "System Home  Ertrag gesamt",
+          "cSharpName": "SystemHomeErtragGesamt"
+        },
+        {
+          "id": "sensor.system_home_kostenersparnis",
+          "friendlyName": "System Home  Kostenersparnis",
+          "cSharpName": "SystemHomeKostenersparnis"
+        },
+        {
+          "id": "sensor.system_home_sb_akkuleistung_2",
+          "friendlyName": "System Home  SB Akkuleistung",
+          "cSharpName": "SystemHomeSbAkkuleistung2"
+        },
+        {
+          "id": "sensor.system_home_sb_einspeiseleistung",
+          "friendlyName": "System Home  SB Einspeiseleistung",
+          "cSharpName": "SystemHomeSbEinspeiseleistung"
+        },
+        {
+          "id": "sensor.system_home_sb_ladestand",
+          "friendlyName": "System Home  SB Ladestand",
+          "cSharpName": "SystemHomeSbLadestand"
+        },
+        {
+          "id": "sensor.system_home_sb_solarleistung",
+          "friendlyName": "System Home  SB Solarleistung",
+          "cSharpName": "SystemHomeSbSolarleistung"
+        },
+        {
+          "id": "sensor.system_home_system_einspeisevorgabe",
+          "friendlyName": "System Home  System Einspeisevorgabe",
+          "cSharpName": "SystemHomeSystemEinspeisevorgabe"
+        },
+        {
+          "id": "sensor.temperatur_batterie",
+          "friendlyName": "Temperatur  Batterie",
+          "cSharpName": "TemperaturBatterie"
+        },
+        {
+          "id": "sensor.temperatur_druck",
+          "friendlyName": "Temperatur  Druck",
+          "cSharpName": "TemperaturDruck"
+        },
+        {
+          "id": "sensor.temperatur_luftfeuchtigkeit",
+          "friendlyName": "Temperatur  Luftfeuchtigkeit",
+          "cSharpName": "TemperaturLuftfeuchtigkeit"
+        },
+        {
+          "id": "sensor.temperatur_temperatur",
+          "friendlyName": "Temperatur  Temperatur",
+          "cSharpName": "TemperaturTemperatur"
+        },
+        {
+          "id": "sensor.treppe_batterie",
+          "friendlyName": "Treppe Batterie",
+          "cSharpName": "TreppeBatterie"
+        },
+        {
+          "id": "sensor.treppe_beleuchtungsstarke",
+          "friendlyName": "Treppe Beleuchtungsst\u00E4rke",
+          "cSharpName": "TreppeBeleuchtungsstarke"
+        },
+        {
+          "id": "sensor.treppe_temperatur",
+          "friendlyName": "Treppe Temperatur",
+          "cSharpName": "TreppeTemperatur"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "unit_of_measurement",
+          "cSharpName": "UnitOfMeasurement",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "state_class",
+          "cSharpName": "StateClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "status",
+          "cSharpName": "Status",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "last_period",
+          "cSharpName": "LastPeriod",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "last_valid_state",
+          "cSharpName": "LastValidState",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "last_reset",
+          "cSharpName": "LastReset",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "next_reset",
+          "cSharpName": "NextReset",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Available",
+          "cSharpName": "Available",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Available (Important)",
+          "cSharpName": "AvailableImportant",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Available (Opportunistic)",
+          "cSharpName": "AvailableOpportunistic",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "Total",
+          "cSharpName": "Total",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "items",
+          "cSharpName": "Items",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "light_level",
+          "cSharpName": "LightLevel",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "battery_state",
+          "cSharpName": "BatteryState",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "valve_tappet_state",
+          "cSharpName": "ValveTappetState",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "name",
+          "cSharpName": "Name",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "schedule",
+          "cSharpName": "Schedule",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "battery_quantity",
+          "cSharpName": "BatteryQuantity",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "battery_voltage",
+          "cSharpName": "BatteryVoltage",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "battery_size",
+          "cSharpName": "BatterySize",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "watts",
+          "cSharpName": "Watts",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "wh_period",
+          "cSharpName": "WhPeriod",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "entity_id",
+          "cSharpName": "EntityId",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "sun",
+      "entities": [
+        {
+          "id": "sun.sun",
+          "friendlyName": "Sun",
+          "cSharpName": "Sun"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "next_dawn",
+          "cSharpName": "NextDawn",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "next_dusk",
+          "cSharpName": "NextDusk",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "next_midnight",
+          "cSharpName": "NextMidnight",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "next_noon",
+          "cSharpName": "NextNoon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "next_rising",
+          "cSharpName": "NextRising",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "next_setting",
+          "cSharpName": "NextSetting",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "elevation",
+          "cSharpName": "Elevation",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "azimuth",
+          "cSharpName": "Azimuth",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "rising",
+          "cSharpName": "Rising",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "switch",
+      "entities": [
+        {
+          "id": "switch.455ea625_de5d_45fb_8bfb_7da987d0062b_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "_455ea625De5d45fb8bfb7da987d0062bInternetAccess"
+        },
+        {
+          "id": "switch.adguard_home_abfrageprotokoll",
+          "friendlyName": "AdGuard Home Abfrageprotokoll",
+          "cSharpName": "AdguardHomeAbfrageprotokoll"
+        },
+        {
+          "id": "switch.adguard_home_filterung",
+          "friendlyName": "AdGuard Home Filterung",
+          "cSharpName": "AdguardHomeFilterung"
+        },
+        {
+          "id": "switch.adguard_home_kindersicherung",
+          "friendlyName": "AdGuard Home Jugendschutz",
+          "cSharpName": "AdguardHomeKindersicherung"
+        },
+        {
+          "id": "switch.adguard_home_schutz",
+          "friendlyName": "AdGuard Home Schutz",
+          "cSharpName": "AdguardHomeSchutz"
+        },
+        {
+          "id": "switch.adguard_home_sichere_suche",
+          "friendlyName": "AdGuard Home Sichere Suche",
+          "cSharpName": "AdguardHomeSichereSuche"
+        },
+        {
+          "id": "switch.adguard_home_sicheres_surfen",
+          "friendlyName": "AdGuard Home Safe Browsing",
+          "cSharpName": "AdguardHomeSicheresSurfen"
+        },
+        {
+          "id": "switch.adguard_internet_access",
+          "friendlyName": "adguard Internetzugang",
+          "cSharpName": "AdguardInternetAccess"
+        },
+        {
+          "id": "switch.anker_internet_access",
+          "friendlyName": "Anker Internetzugang",
+          "cSharpName": "AnkerInternetAccess"
+        },
+        {
+          "id": "switch.authentik_internetzugang_3",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "AuthentikInternetzugang3"
+        },
+        {
+          "id": "switch.authentik_internetzugang_4",
+          "friendlyName": "authentik Internetzugang",
+          "cSharpName": "AuthentikInternetzugang4"
+        },
+        {
+          "id": "switch.b75d7e45_1950_4477_8bc2_c5e157394c74_internet_access",
+          "friendlyName": "iPhone Internetzugang",
+          "cSharpName": "B75d7e45195044778bc2C5e157394c74InternetAccess"
+        },
+        {
+          "id": "switch.badezimmer_crossfade",
+          "friendlyName": "Badezimmer \u00DCberblenden",
+          "cSharpName": "BadezimmerCrossfade"
+        },
+        {
+          "id": "switch.badezimmer_loudness",
+          "friendlyName": "Badezimmer Loudness",
+          "cSharpName": "BadezimmerLoudness"
+        },
+        {
+          "id": "switch.d_mk_w10_internet_access",
+          "friendlyName": "D-MK-W11 Internetzugang",
+          "cSharpName": "DMkW10InternetAccess"
+        },
+        {
+          "id": "switch.dev_mk_w10_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "DevMkW10Internetzugang"
+        },
+        {
+          "id": "switch.duke_dell_1_internetzugang",
+          "friendlyName": "Duke-Dell-1 Internetzugang",
+          "cSharpName": "DukeDell1Internetzugang"
+        },
+        {
+          "id": "switch.ecb5fa22922a_internet_access",
+          "friendlyName": "Hue Bridge Internetzugang",
+          "cSharpName": "Ecb5fa22922aInternetAccess"
+        },
+        {
+          "id": "switch.eimer_internetzugang",
+          "friendlyName": "Eimer Internetzugang",
+          "cSharpName": "EimerInternetzugang"
+        },
+        {
+          "id": "switch.esphome_node_pc_internet_access",
+          "friendlyName": "PC Internetzugang",
+          "cSharpName": "EsphomeNodePcInternetAccess"
+        },
+        {
+          "id": "switch.esphome_node_pc_power",
+          "friendlyName": "PC Power",
+          "cSharpName": "EsphomeNodePcPower"
+        },
+        {
+          "id": "switch.esphome_node_pc_reset",
+          "friendlyName": "PC Reset",
+          "cSharpName": "EsphomeNodePcReset"
+        },
+        {
+          "id": "switch.esszimmer_crossfade",
+          "friendlyName": "Esszimmer \u00DCberblenden",
+          "cSharpName": "EsszimmerCrossfade"
+        },
+        {
+          "id": "switch.esszimmer_loudness",
+          "friendlyName": "Esszimmer Loudness",
+          "cSharpName": "EsszimmerLoudness"
+        },
+        {
+          "id": "switch.fritz_box_7590_wi_fi_fritz_box_2_4ghz",
+          "friendlyName": "FRITZ!Box 7590 Wi-Fi FRITZ!Box (2.4Ghz)",
+          "cSharpName": "FritzBox7590WiFiFritzBox24ghz"
+        },
+        {
+          "id": "switch.fritz_box_7590_wi_fi_fritz_box_5ghz",
+          "friendlyName": "FRITZ!Box 7590 Wi-Fi FRITZ!Box (5Ghz)",
+          "cSharpName": "FritzBox7590WiFiFritzBox5ghz"
+        },
+        {
+          "id": "switch.fritz_box_7590_wi_fi_fritz_box_gastzugang",
+          "friendlyName": "FRITZ!Box 7590 Wi-Fi FRITZ!Box Gastzugang",
+          "cSharpName": "FritzBox7590WiFiFritzBoxGastzugang"
+        },
+        {
+          "id": "switch.galaxy_s20_fe_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "GalaxyS20FeInternetAccess"
+        },
+        {
+          "id": "switch.galaxy_s22_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "GalaxyS22InternetAccess"
+        },
+        {
+          "id": "switch.galaxywatch_d38c_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "GalaxywatchD38cInternetAccess"
+        },
+        {
+          "id": "switch.gelbetonne_internetzugang",
+          "friendlyName": "Gelbetonne Internetzugang",
+          "cSharpName": "GelbetonneInternetzugang"
+        },
+        {
+          "id": "switch.homeassistant_internet_access",
+          "friendlyName": "11ff32000952470bad05a5cbd082ea88-hap Internetzugang",
+          "cSharpName": "HomeassistantInternetAccess"
+        },
+        {
+          "id": "switch.ht_badezimmer_1_childlock",
+          "friendlyName": "ht_badezimmer_1 ChildLock",
+          "cSharpName": "HtBadezimmer1Childlock"
+        },
+        {
+          "id": "switch.ht_badezimmer_1_silentmode",
+          "friendlyName": "ht_badezimmer_1 SilentMode",
+          "cSharpName": "HtBadezimmer1Silentmode"
+        },
+        {
+          "id": "switch.ht_esszimmer_1_childlock",
+          "friendlyName": "ht_esszimmer_1 ChildLock",
+          "cSharpName": "HtEsszimmer1Childlock"
+        },
+        {
+          "id": "switch.ht_esszimmer_1_silentmode",
+          "friendlyName": "ht_esszimmer_1 SilentMode",
+          "cSharpName": "HtEsszimmer1Silentmode"
+        },
+        {
+          "id": "switch.ht_kuche_1_childlock",
+          "friendlyName": "ht_kuche_1 ChildLock",
+          "cSharpName": "HtKuche1Childlock"
+        },
+        {
+          "id": "switch.ht_kuche_1_silentmode",
+          "friendlyName": "ht_kuche_1 SilentMode",
+          "cSharpName": "HtKuche1Silentmode"
+        },
+        {
+          "id": "switch.ht_studio_giebel_childlock",
+          "friendlyName": "ht_studio_giebel ChildLock",
+          "cSharpName": "HtStudioGiebelChildlock"
+        },
+        {
+          "id": "switch.ht_studio_giebel_silentmode",
+          "friendlyName": "ht_studio_giebel SilentMode",
+          "cSharpName": "HtStudioGiebelSilentmode"
+        },
+        {
+          "id": "switch.ht_studio_leseecke_childlock",
+          "friendlyName": "ht_studio_leseecke ChildLock",
+          "cSharpName": "HtStudioLeseeckeChildlock"
+        },
+        {
+          "id": "switch.ht_studio_leseecke_silentmode",
+          "friendlyName": "ht_studio_leseecke SilentMode",
+          "cSharpName": "HtStudioLeseeckeSilentmode"
+        },
+        {
+          "id": "switch.ipad_pro_2_internetzugang",
+          "friendlyName": "iPad-Pro-2 Internetzugang",
+          "cSharpName": "IpadPro2Internetzugang"
+        },
+        {
+          "id": "switch.ipad_pro_internet_access",
+          "friendlyName": "iPad-Pro Internetzugang",
+          "cSharpName": "IpadProInternetAccess"
+        },
+        {
+          "id": "switch.iphone_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "IphoneInternetzugang"
+        },
+        {
+          "id": "switch.iphone_internetzugang_2",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "IphoneInternetzugang2"
+        },
+        {
+          "id": "switch.kuche_crossfade",
+          "friendlyName": "K\u00FCche \u00DCberblenden",
+          "cSharpName": "KucheCrossfade"
+        },
+        {
+          "id": "switch.kuche_loudness",
+          "friendlyName": "K\u00FCche Loudness",
+          "cSharpName": "KucheLoudness"
+        },
+        {
+          "id": "switch.m5mbp_internetzugang",
+          "friendlyName": "M5MBP Internetzugang",
+          "cSharpName": "M5mbpInternetzugang"
+        },
+        {
+          "id": "switch.markus_de_api_nutzung",
+          "friendlyName": "Markus (DE) Api Nutzung",
+          "cSharpName": "MarkusDeApiNutzung"
+        },
+        {
+          "id": "switch.meross_lan_pre_release",
+          "friendlyName": "Meross LAN Pre-release",
+          "cSharpName": "MerossLanPreRelease"
+        },
+        {
+          "id": "switch.meross_smart_plug_internet_access",
+          "friendlyName": "smart_power_switch Internetzugang",
+          "cSharpName": "MerossSmartPlugInternetAccess"
+        },
+        {
+          "id": "switch.mk_w10_internet_access",
+          "friendlyName": "JD-W10 Internetzugang",
+          "cSharpName": "MkW10InternetAccess"
+        },
+        {
+          "id": "switch.mk_w10_internet_access_2",
+          "friendlyName": "MK-W11 Internetzugang",
+          "cSharpName": "MkW10InternetAccess2"
+        },
+        {
+          "id": "switch.mk_w11_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "MkW11InternetAccess"
+        },
+        {
+          "id": "switch.nginx_internet_access",
+          "friendlyName": "PC-192-168-178-9 Internetzugang",
+          "cSharpName": "NginxInternetAccess"
+        },
+        {
+          "id": "switch.nuc12_internet_access",
+          "friendlyName": "pve Internetzugang",
+          "cSharpName": "Nuc12InternetAccess"
+        },
+        {
+          "id": "switch.pamstest01_internetzugang",
+          "friendlyName": "PamsTest01 Internetzugang",
+          "cSharpName": "Pamstest01Internetzugang"
+        },
+        {
+          "id": "switch.pamstest02_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "Pamstest02Internetzugang"
+        },
+        {
+          "id": "switch.pc_192_168_178_160_internetzugang",
+          "friendlyName": "PC-192-168-178-160 Internetzugang",
+          "cSharpName": "Pc192168178160Internetzugang"
+        },
+        {
+          "id": "switch.pc_192_168_178_7_internet_access",
+          "friendlyName": "PC-BC-24-11-7E-67-95 Internetzugang",
+          "cSharpName": "Pc1921681787InternetAccess"
+        },
+        {
+          "id": "switch.pc_40_2f_86_dd_65_e8_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "Pc402f86Dd65E8InternetAccess"
+        },
+        {
+          "id": "switch.pc_70_f0_88_f8_d9_40_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "Pc70F088F8D940InternetAccess"
+        },
+        {
+          "id": "switch.pc_8e_d7_75_87_8f_a0_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "Pc8eD775878fA0Internetzugang"
+        },
+        {
+          "id": "switch.pc_92_41_8e_4d_df_ab_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "Pc92418e4dDfAbInternetzugang"
+        },
+        {
+          "id": "switch.pc_a6_74_a6_b3_3b_ac_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "PcA674A6B33bAcInternetzugang"
+        },
+        {
+          "id": "switch.pc_a6_ba_66_75_b6_94_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "PcA6Ba6675B694Internetzugang"
+        },
+        {
+          "id": "switch.pc_aa_e9_5e_f0_db_39_internetzugang",
+          "friendlyName": "PC-AA-E9-5E-F0-DB-39 Internetzugang",
+          "cSharpName": "PcAaE95eF0Db39Internetzugang"
+        },
+        {
+          "id": "switch.pc_be24_11ff_fe56_60e5_internet_access",
+          "friendlyName": "PC-192-168-178-11 Internetzugang",
+          "cSharpName": "PcBe2411ffFe5660e5InternetAccess"
+        },
+        {
+          "id": "switch.pc_c9_77d_b6e0_10ef_internet_access",
+          "friendlyName": "iPhone Internetzugang",
+          "cSharpName": "PcC977dB6e010efInternetAccess"
+        },
+        {
+          "id": "switch.s21_fe_von_marvin_internet_access",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "S21FeVonMarvinInternetAccess"
+        },
+        {
+          "id": "switch.shc1030ac_internet_access",
+          "friendlyName": "shc1030ac Internetzugang",
+          "cSharpName": "Shc1030acInternetAccess"
+        },
+        {
+          "id": "switch.smart_power_switch_config_overtemp_enable",
+          "friendlyName": "smart_power_switch Config overtemp enable",
+          "cSharpName": "SmartPowerSwitchConfigOvertempEnable"
+        },
+        {
+          "id": "switch.smart_power_switch_outlet",
+          "friendlyName": "smart_power_switch Outlet",
+          "cSharpName": "SmartPowerSwitchOutlet"
+        },
+        {
+          "id": "switch.sonos_alarm_1",
+          "friendlyName": "K\u00FCche Once alarm 06:30",
+          "cSharpName": "SonosAlarm1"
+        },
+        {
+          "id": "switch.sonoszp_internet_access",
+          "friendlyName": "K\u00FCche Internetzugang",
+          "cSharpName": "SonoszpInternetAccess"
+        },
+        {
+          "id": "switch.sonoszp_internet_access_2",
+          "friendlyName": "Esszimmer Internetzugang",
+          "cSharpName": "SonoszpInternetAccess2"
+        },
+        {
+          "id": "switch.sonoszp_internet_access_3",
+          "friendlyName": "Badezimmer Internetzugang",
+          "cSharpName": "SonoszpInternetAccess3"
+        },
+        {
+          "id": "switch.soosenbinder_22_internetzugang",
+          "friendlyName": "Soosenbinder-22 Internetzugang",
+          "cSharpName": "Soosenbinder22Internetzugang"
+        },
+        {
+          "id": "switch.treppe_bewegungssensor_aktiviert",
+          "friendlyName": "Treppe Bewegungssensor aktiviert",
+          "cSharpName": "TreppeBewegungssensorAktiviert"
+        },
+        {
+          "id": "switch.treppe_lichtsensor_aktiviert",
+          "friendlyName": "Treppe Lichtsensor aktiviert",
+          "cSharpName": "TreppeLichtsensorAktiviert"
+        },
+        {
+          "id": "switch.watch_internetzugang",
+          "friendlyName": "Watch Internetzugang",
+          "cSharpName": "WatchInternetzugang"
+        },
+        {
+          "id": "switch.win_o2bfee8indt_internetzugang",
+          "friendlyName": "Internetzugang",
+          "cSharpName": "WinO2bfee8indtInternetzugang"
+        },
+        {
+          "id": "switch.wohnzimmer_internet_access",
+          "friendlyName": "Wohnzimmer Internetzugang",
+          "cSharpName": "WohnzimmerInternetAccess"
+        },
+        {
+          "id": "switch.wohnzimmer_internet_access_2",
+          "friendlyName": "Wohnzimmer Internetzugang",
+          "cSharpName": "WohnzimmerInternetAccess2"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "alarm_id",
+          "cSharpName": "AlarmId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "time",
+          "cSharpName": "Time",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "duration",
+          "cSharpName": "Duration",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "recurrence",
+          "cSharpName": "Recurrence",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "volume",
+          "cSharpName": "Volume",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "play_mode",
+          "cSharpName": "PlayMode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "scheduled_today",
+          "cSharpName": "ScheduledToday",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "include_linked_zones",
+          "cSharpName": "IncludeLinkedZones",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "requests_last_min",
+          "cSharpName": "RequestsLastMin",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "requests_last_hour",
+          "cSharpName": "RequestsLastHour",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "standard",
+          "cSharpName": "Standard",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "bssid",
+          "cSharpName": "Bssid",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "mac_address_control",
+          "cSharpName": "MacAddressControl",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        }
+      ]
+    },
+    {
+      "domain": "timer",
+      "entities": [
+        {
+          "id": "timer.dryer_timer",
+          "friendlyName": "timer-dryer",
+          "cSharpName": "DryerTimer"
+        },
+        {
+          "id": "timer.washing_machine_timer",
+          "friendlyName": "timer-washing-machine",
+          "cSharpName": "WashingMachineTimer"
+        },
+        {
+          "id": "timer.window_open",
+          "friendlyName": "timer_window_open",
+          "cSharpName": "WindowOpen"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "duration",
+          "cSharpName": "Duration",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "editable",
+          "cSharpName": "Editable",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "todo",
+      "entities": [
+        {
+          "id": "todo.einkaufsliste",
+          "friendlyName": "Einkaufsliste",
+          "cSharpName": "Einkaufsliste"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "tts",
+      "entities": [
+        {
+          "id": "tts.google_translate_en_com",
+          "friendlyName": "Google Translate en com",
+          "cSharpName": "GoogleTranslateEnCom"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "update",
+      "entities": [
+        {
+          "id": "update.adguard_home",
+          "friendlyName": "AdGuard Home",
+          "cSharpName": "AdguardHome"
+        },
+        {
+          "id": "update.anker_solix_update",
+          "friendlyName": "Anker Solix update",
+          "cSharpName": "AnkerSolixUpdate"
+        },
+        {
+          "id": "update.better_moment_card_update",
+          "friendlyName": "Better Moment Card update",
+          "cSharpName": "BetterMomentCardUpdate"
+        },
+        {
+          "id": "update.bosch_smart_home_controller_shc_integration_update",
+          "friendlyName": "Bosch Smart Home Controller (SHC) integration update",
+          "cSharpName": "BoschSmartHomeControllerShcIntegrationUpdate"
+        },
+        {
+          "id": "update.button_card_update",
+          "friendlyName": "button-card update",
+          "cSharpName": "ButtonCardUpdate"
+        },
+        {
+          "id": "update.deutscher_wetterdienst_update",
+          "friendlyName": "Deutscher Wetterdienst update",
+          "cSharpName": "DeutscherWetterdienstUpdate"
+        },
+        {
+          "id": "update.digital_clock_update",
+          "friendlyName": "Digital Clock update",
+          "cSharpName": "DigitalClockUpdate"
+        },
+        {
+          "id": "update.dwains_dashboard_update",
+          "friendlyName": "Dwains Dashboard update",
+          "cSharpName": "DwainsDashboardUpdate"
+        },
+        {
+          "id": "update.esphome_update",
+          "friendlyName": "ESPHome Device Builder Update",
+          "cSharpName": "EsphomeUpdate"
+        },
+        {
+          "id": "update.fritz_box_7590_fritz_os",
+          "friendlyName": "FRITZ!Box 7590 FRITZ!OS",
+          "cSharpName": "FritzBox7590FritzOs"
+        },
+        {
+          "id": "update.get_hacs_update",
+          "friendlyName": "Get HACS Update",
+          "cSharpName": "GetHacsUpdate"
+        },
+        {
+          "id": "update.github_actions_runner_update",
+          "friendlyName": "GitHub Actions Runner Update",
+          "cSharpName": "GithubActionsRunnerUpdate"
+        },
+        {
+          "id": "update.hacs_update",
+          "friendlyName": "HACS update",
+          "cSharpName": "HacsUpdate"
+        },
+        {
+          "id": "update.home_assistant_core_update",
+          "friendlyName": "Home Assistant Core Update",
+          "cSharpName": "HomeAssistantCoreUpdate"
+        },
+        {
+          "id": "update.home_assistant_operating_system_update",
+          "friendlyName": "Home Assistant Operating System Update",
+          "cSharpName": "HomeAssistantOperatingSystemUpdate"
+        },
+        {
+          "id": "update.home_assistant_skyconnect_224c37be_firmware",
+          "friendlyName": "Home Assistant SkyConnect (224c37be) Firmware",
+          "cSharpName": "HomeAssistantSkyconnect224c37beFirmware"
+        },
+        {
+          "id": "update.home_assistant_supervisor_update",
+          "friendlyName": "Home Assistant Supervisor Update",
+          "cSharpName": "HomeAssistantSupervisorUpdate"
+        },
+        {
+          "id": "update.log_viewer_update",
+          "friendlyName": "Log Viewer Update",
+          "cSharpName": "LogViewerUpdate"
+        },
+        {
+          "id": "update.matter_server_update",
+          "friendlyName": "Matter Server Update",
+          "cSharpName": "MatterServerUpdate"
+        },
+        {
+          "id": "update.meross_lan_update",
+          "friendlyName": "Meross LAN update",
+          "cSharpName": "MerossLanUpdate"
+        },
+        {
+          "id": "update.meross_local_broker_addon_update",
+          "friendlyName": "Meross Local Broker Addon Update",
+          "cSharpName": "MerossLocalBrokerAddonUpdate"
+        },
+        {
+          "id": "update.mini_media_player_update",
+          "friendlyName": "Mini Media Player update",
+          "cSharpName": "MiniMediaPlayerUpdate"
+        },
+        {
+          "id": "update.mushroom_update",
+          "friendlyName": "Mushroom update",
+          "cSharpName": "MushroomUpdate"
+        },
+        {
+          "id": "update.netdaemon_v6_net_10_update",
+          "friendlyName": "NetDaemon V6 (.NET 10) Update",
+          "cSharpName": "NetdaemonV6Net10Update"
+        },
+        {
+          "id": "update.open_meteo_solar_forecast_update",
+          "friendlyName": "Open-Meteo Solar Forecast update",
+          "cSharpName": "OpenMeteoSolarForecastUpdate"
+        },
+        {
+          "id": "update.paper_buttons_row_update",
+          "friendlyName": "Paper Buttons Row update",
+          "cSharpName": "PaperButtonsRowUpdate"
+        },
+        {
+          "id": "update.samba_share_update",
+          "friendlyName": "Samba share Update",
+          "cSharpName": "SambaShareUpdate"
+        },
+        {
+          "id": "update.scheduler_card_update",
+          "friendlyName": "Scheduler Card update",
+          "cSharpName": "SchedulerCardUpdate"
+        },
+        {
+          "id": "update.simple_thermostat_update",
+          "friendlyName": "Simple Thermostat update",
+          "cSharpName": "SimpleThermostatUpdate"
+        },
+        {
+          "id": "update.studio_code_server_update",
+          "friendlyName": "Studio Code Server Update",
+          "cSharpName": "StudioCodeServerUpdate"
+        },
+        {
+          "id": "update.timer_bar_card_update",
+          "friendlyName": "Timer Bar Card update",
+          "cSharpName": "TimerBarCardUpdate"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "auto_update",
+          "cSharpName": "AutoUpdate",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "display_precision",
+          "cSharpName": "DisplayPrecision",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "installed_version",
+          "cSharpName": "InstalledVersion",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "in_progress",
+          "cSharpName": "InProgress",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "latest_version",
+          "cSharpName": "LatestVersion",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "release_summary",
+          "cSharpName": "ReleaseSummary",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "release_url",
+          "cSharpName": "ReleaseUrl",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "skipped_version",
+          "cSharpName": "SkippedVersion",
+          "clrType": null
+        },
+        {
+          "jsonName": "title",
+          "cSharpName": "Title",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "update_percentage",
+          "cSharpName": "UpdatePercentage",
+          "clrType": null
+        },
+        {
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        }
+      ]
+    },
+    {
+      "domain": "valve",
+      "entities": [
+        {
+          "id": "valve.ht_badezimmer_1_valve",
+          "friendlyName": "ht_badezimmer_1 Valve",
+          "cSharpName": "HtBadezimmer1Valve"
+        },
+        {
+          "id": "valve.ht_esszimmer_1_valve",
+          "friendlyName": "ht_esszimmer_1 Valve",
+          "cSharpName": "HtEsszimmer1Valve"
+        },
+        {
+          "id": "valve.ht_kuche_1_valve",
+          "friendlyName": "ht_kuche_1 Valve",
+          "cSharpName": "HtKuche1Valve"
+        },
+        {
+          "id": "valve.ht_studio_giebel_valve",
+          "friendlyName": "ht_studio_giebel Valve",
+          "cSharpName": "HtStudioGiebelValve"
+        },
+        {
+          "id": "valve.ht_studio_leseecke_valve",
+          "friendlyName": "ht_studio_leseecke Valve",
+          "cSharpName": "HtStudioLeseeckeValve"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "current_position",
+          "cSharpName": "CurrentPosition",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        }
+      ]
+    },
+    {
+      "domain": "weather",
+      "entities": [
+        {
+          "id": "weather.forecast_home",
+          "friendlyName": "Home",
+          "cSharpName": "ForecastHome"
+        },
+        {
+          "id": "weather.forecast_home_2",
+          "friendlyName": "Forecast Home",
+          "cSharpName": "ForecastHome2"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "temperature",
+          "cSharpName": "Temperature",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "dew_point",
+          "cSharpName": "DewPoint",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "temperature_unit",
+          "cSharpName": "TemperatureUnit",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "humidity",
+          "cSharpName": "Humidity",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "cloud_coverage",
+          "cSharpName": "CloudCoverage",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "uv_index",
+          "cSharpName": "UvIndex",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "pressure",
+          "cSharpName": "Pressure",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "pressure_unit",
+          "cSharpName": "PressureUnit",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "wind_bearing",
+          "cSharpName": "WindBearing",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "wind_speed",
+          "cSharpName": "WindSpeed",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "wind_speed_unit",
+          "cSharpName": "WindSpeedUnit",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "visibility_unit",
+          "cSharpName": "VisibilityUnit",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "precipitation_unit",
+          "cSharpName": "PrecipitationUnit",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "attribution",
+          "cSharpName": "Attribution",
+          "clrType": "System.String"
+        }
+      ]
+    },
+    {
+      "domain": "zone",
+      "entities": [
+        {
+          "id": "zone.home",
+          "friendlyName": "Home",
+          "cSharpName": "Home"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "latitude",
+          "cSharpName": "Latitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "longitude",
+          "cSharpName": "Longitude",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "radius",
+          "cSharpName": "Radius",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "passive",
+          "cSharpName": "Passive",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "persons",
+          "cSharpName": "Persons",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "editable",
+          "cSharpName": "Editable",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        }
+      ]
+    }
+  ]
+}
