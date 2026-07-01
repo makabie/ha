@@ -1,0 +1,43 @@
+name: Deploy NetDaemon add-on
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "netdaemon/**"
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Reload add-on repository
+        run: |
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
+            http://supervisor/addons/reload
+
+      - name: Resolve add-on slug
+        id: addon
+        run: |
+          SLUG=$(curl -fsSL \
+            -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
+            http://supervisor/addons \
+            | jq -r '.data.addons[] | select(.name == "NetDaemon") | .slug')
+          if [ -z "$SLUG" ]; then
+            echo "Could not find an add-on named 'NetDaemon' via the Supervisor API" >&2
+            exit 1
+          fi
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild NetDaemon add-on
+        run: |
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
+            "http://supervisor/addons/${{ steps.addon.outputs.slug }}/rebuild"
+
+      - name: Restart NetDaemon add-on
+        run: |
+          curl -fsSL -X POST \
+            -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
+            "http://supervisor/addons/${{ steps.addon.outputs.slug }}/restart"

@@ -1,0 +1,19 @@
+name: GitHub Actions Runner
+version: "0.1.0"
+slug: github-runner
+description: Self-hosted GitHub Actions runner used to deploy the NetDaemon add-on
+url: https://github.com/makabie/ha
+arch:
+  - amd64
+  - aarch64
+init: false
+hassio_api: true
+hassio_role: manager
+options:
+  repo: "makabie/ha"
+  github_pat: ""
+  runner_name: "homeassistant"
+schema:
+  repo: str
+  github_pat: password
+  runner_name: str
