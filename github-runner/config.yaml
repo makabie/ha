@@ -1,5 +1,5 @@
 name: GitHub Actions Runner
-version: "0.1.1"
+version: "0.1.2"
 slug: github-runner
 description: Self-hosted GitHub Actions runner used to deploy the NetDaemon add-on
 url: https://github.com/makabie/ha
