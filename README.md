@@ -23,12 +23,13 @@ Im Add-on Store erscheint jetzt "GitHub Actions Runner". Installieren, dann unte
 
 Danach starten. Unter GitHub → Repo → **Settings → Actions → Runners** sollte der Runner als "Idle" erscheinen.
 
-### 4. NetDaemon-Add-on installieren
-Ebenfalls im Add-on Store: "NetDaemon" installieren und starten. In den Add-on-Logs prüfen, ob die Verbindung zu Home Assistant erfolgreich aufgebaut wird (WebSocket-Connect zu `homeassistant:8123`).
+### 4. Long-Lived Access Token erstellen
+In Home Assistant: **Profil (unten links) → Sicherheit → Long-Lived Access Tokens → Token erstellen**. Der `SUPERVISOR_TOKEN` des Add-ons ist nur gegenüber der Supervisor-API gültig, nicht gegenüber Home Assistant Core direkt - NetDaemon braucht deshalb einen normalen Token.
 
-⚠️ Das ist der Punkt, den ich nicht ohne Zugriff auf deine echte Instanz testen konnte – falls die Verbindung fehlschlägt, bitte die Add-on-Logs schicken, dann passen wir `entrypoint.sh` an.
+### 5. NetDaemon-Add-on installieren
+Ebenfalls im Add-on Store: "NetDaemon" installieren, unter Konfiguration `ha_token` auf den Token aus Schritt 4 setzen, dann starten. In den Add-on-Logs prüfen, ob die Verbindung zu Home Assistant erfolgreich aufgebaut wird (WebSocket-Connect zu `homeassistant:8123`, kein "Unauthorized").
 
-### 5. Pipeline testen
+### 6. Pipeline testen
 Eine Kleinigkeit in `netdaemon/apps/**` ändern, committen, nach `main` pushen. Der Workflow [deploy-netdaemon.yml](.github/workflows/deploy-netdaemon.yml) sollte über den self-hosted Runner laufen und das NetDaemon-Add-on neu bauen + neu starten.
 
 ## Laufende Entwicklung

@@ -12,6 +12,9 @@ RUN dotnet publish -c Release -o out ./Apps.csproj
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends jq \
+    && rm -rf /var/lib/apt/lists/*
 COPY --from=build-env /app/out .
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
