@@ -2,7 +2,10 @@ name: Bump add-on version
 
 on:
   push:
-    branches: [main]
+    # main is a protected branch and can't be pushed to directly - bump the
+    # version on the feature branch instead, so it merges into main as part
+    # of the normal PR flow.
+    branches-ignore: [main]
     paths:
       - "netdaemon/**"
       - "github-runner/**"
