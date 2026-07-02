@@ -108,18 +108,19 @@ sensor:
 # ============================================================
 
 utility_meter:
-  pv_energy_day:
+  pv_energy_dayly:
     source: sensor.pv_energy_total
-    name: "PV energy today"
+    name: "PV energy daily"
     cycle: daily
-  pv_energy_month:
+  pv_energy_monthly:
     source: sensor.pv_energy_total
-    name: "PV energy month"
-    cycle: month
-  pv_energy_year:
+    name: "PV energy monthly"
+    cycle: monthly
+  pv_energy_yearly:
     source: sensor.pv_energy_total
-    name: "PV energy year"
-    cycle: year    
+    name: "PV energy yearly"
+    cycle: yearly    
+    
 # ============================================================
 # 2b) TEMPLATE-SENSOREN (Helfer-Logik)
 #    WICHTIG: Nur EIN "template:"-Key in der gesamten Config!
