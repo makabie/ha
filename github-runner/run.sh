@@ -1,6 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 
+# The container has no other users and only ever runs this one job, so running
+# the runner as root is fine here and avoids losing SUPERVISOR_TOKEN (and any
+# other env vars) that `sudo -u` would otherwise strip from the job's environment.
+export RUNNER_ALLOW_RUNASROOT=1
+
 OPTIONS_FILE="/data/options.json"
 REPO="$(jq -r '.repo' "$OPTIONS_FILE")"
 GITHUB_PAT="$(jq -r '.github_pat' "$OPTIONS_FILE")"
@@ -23,7 +28,7 @@ fetch_token() {
 
 REG_TOKEN="$(fetch_token)"
 
-sudo -u runner ./config.sh \
+./config.sh \
     --url "https://github.com/${REPO}" \
     --token "${REG_TOKEN}" \
     --name "${RUNNER_NAME}" \
@@ -38,9 +43,9 @@ deregister() {
         -H "Accept: application/vnd.github+json" \
         "https://api.github.com/repos/${REPO}/actions/runners/remove-token" \
         | jq -r '.token')"
-    sudo -u runner ./config.sh remove --token "${REMOVE_TOKEN}" || true
+    ./config.sh remove --token "${REMOVE_TOKEN}" || true
 }
 trap deregister TERM INT
 
-sudo -u runner ./run.sh &
+./run.sh &
 wait $!
