@@ -1,0 +1,324 @@
+﻿############################################################
+# SOLARBANK 2 E1600 PRO – EINSPEISE-OPTIMIERUNG
+# Optimiert die Home-Load-Preset anhand der Open-Meteo Solar
+# Forecast Integration (2 Ausrichtungen), damit der Akku bis
+# Sonnenuntergang voll ist und nachts eine sinnvolle
+# Grundlast-Einspeisung erfolgt.
+#
+# Quelle für PV-Prognose/-Leistung: Open-Meteo Solar Forecast
+# (2 Dienste / Ausrichtungen, Suffix "_2" für den zweiten Dienst)
+############################################################
+
+# ============================================================
+# 1) HELPER (unter Einstellungen -> Geräte & Dienste -> Helfer
+#    anlegen, ODER diesen Block in configuration.yaml einfügen
+#    unter dem jeweiligen Helper-Typ)
+# ============================================================
+
+input_number:
+  sb_akku_kapazitaet_wh:
+    name: "SB Akku-Kapazität (Wh)"
+    min: 0
+    max: 5000
+    step: 10
+    unit_of_measurement: "Wh"
+    icon: mdi:battery-high
+    initial: 1600
+    # ^ Falls du Erweiterungsbatterien hast, hier die GESAMTKAPAZITÄT eintragen.
+
+  sb_max_hausausgabe:
+    name: "SB Maximale Hausausgabe"
+    min: 0
+    max: 1600
+    step: 10
+    unit_of_measurement: "W"
+    icon: mdi:home-lightning-bolt
+    initial: 800
+
+  sb_min_preset_tag:
+    name: "SB Minimal-Preset am Tag"
+    min: 0
+    max: 800
+    step: 10
+    unit_of_measurement: "W"
+    icon: mdi:weather-sunny
+    initial: 100
+
+  sb_nacht_preset_normal:
+    name: "SB Nacht-Preset (normale Prognose)"
+    min: 0
+    max: 800
+    step: 10
+    unit_of_measurement: "W"
+    icon: mdi:weather-night
+    initial: 100
+
+  sb_nacht_preset_niedrig:
+    name: "SB Nacht-Preset (schlechte Prognose)"
+    min: 0
+    max: 800
+    step: 10
+    unit_of_measurement: "W"
+    icon: mdi:battery-low
+    initial: 50
+
+  sb_schwelle_schlechte_prognose:
+    name: "SB Schwelle 'schlechte PV-Prognose morgen' (kWh)"
+    min: 0
+    max: 10
+    step: 0.1
+    unit_of_measurement: "kWh"
+    icon: mdi:weather-cloudy
+    initial: 1.5
+
+input_boolean:
+  sb_optimierung_aktiv:
+    name: "Solarbank Optimierung aktiv"
+    icon: mdi:auto-fix
+
+# ============================================================
+# 2a) FILTER-SENSOR (gleitender Durchschnitt der PV-Leistung)
+#     Glättet kurzfristige Wolken-Spitzen/Einbrüche, damit die
+#     Morgen-Deckelung nicht bei jeder kleinen Schwankung zittert.
+#     window_size: 3 Minuten gleitender Mittelwert.
+#     Quelle: sensor.sb_pv_leistung_gesamt (Template-Sensor unten,
+#     Summe beider Ausrichtungen).
+# ============================================================
+
+sensor:
+  - platform: filter
+    name: "SB PV Leistung Geglaettet"
+    entity_id: sensor.solarbank_2_e1600_pro_solarleistung
+    filters:
+      - filter: time_simple_moving_average
+        window_size: "00:03"
+        precision: 0
+
+# ============================================================
+# 2b) TEMPLATE-SENSOREN (Helfer-Logik)
+#    WICHTIG: Nur EIN "template:"-Key in der gesamten Config!
+#    Alle Template-Sensoren stehen daher in dieser einen Liste.
+# ============================================================
+
+template:
+  - sensor:
+      # Summe der PV-Leistung beider Ausrichtungen (Open-Meteo
+      # liefert pro Dienst einen eigenen Leistungssensor mit
+      # "_2"-Suffix für Dienst 2).
+      - name: "SB PV Leistung Gesamt"
+        unique_id: sb_pv_leistung_gesamt
+        unit_of_measurement: "W"
+        device_class: power
+        state: >
+          {% set p1 = states('sensor.home_power_production_now') | float(0) %}
+          {% set p2 = states('sensor.home_power_production_now_2') | float(0) %}
+          {{ (p1 + p2) | round(0) }}
+
+      # Restliche erwartete PV-Energie bis Sonnenuntergang (kWh),
+      # Summe beider Ausrichtungen. Open-Meteo liefert die
+      # Restenergie-Sensoren in Wh -> Umrechnung auf kWh.
+      - name: "SB PV Restprognose Heute"
+        unique_id: sb_pv_restprognose_heute
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state: >
+          {% set e1 = states('sensor.home_energy_production_today_remaining') | float(0) %}
+          {% set e2 = states('sensor.home_energy_production_today_remaining_2') | float(0) %}
+          {{ (e1 + e2) | round(3) }}
+
+      # Wie viel Energie braucht der Akku noch bis 100%? (kWh)
+      - name: "SB Akku Fehlende Energie"
+        unique_id: sb_akku_fehlende_energie
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state: >
+          {% set soc = states('sensor.solarbank_2_e1600_pro_ladestand') | float(0) %}
+          {% set kap = states('input_number.sb_akku_kapazitaet_wh') | float(1600) / 1000 %}
+          {{ ((100 - soc) / 100 * kap) | round(2) }}
+
+      # Stunden bis Sonnenuntergang
+      - name: "SB Stunden Bis Sonnenuntergang"
+        unique_id: sb_stunden_bis_sonnenuntergang
+        unit_of_measurement: "h"
+        state: >
+          {% set sunset = state_attr('sun.sun', 'next_setting') | as_datetime | as_local %}
+          {% set diff = (sunset - now()).total_seconds() / 3600 %}
+          {{ [diff, 0.1] | max | round(2) }}
+
+      # Optimale aktuelle Home-Load-Preset (W) tagsüber
+      # Logik: Überschuss = PV-Restprognose - was der Akku noch braucht
+      #        Überschuss gleichmäßig über die Reststunden bis Sonnenuntergang verteilt
+      #        + Grundlast-Minimum, gekappt auf [min_preset, max_hausausgabe]
+      - name: "SB Optimales Tages Preset"
+        unique_id: sb_optimales_tages_preset
+        unit_of_measurement: "W"
+        state: >
+          {% set pv_rest = states('sensor.sb_pv_restprognose_heute') | float(0) %}
+          {% set akku_fehlt = states('sensor.sb_akku_fehlende_energie') | float(0) %}
+          {% set stunden = states('sensor.sb_stunden_bis_sonnenuntergang') | float(1) %}
+          {% set min_preset = states('input_number.sb_min_preset_tag') | float(100) %}
+          {% set max_preset = states('input_number.sb_max_hausausgabe') | float(800) %}
+
+          {# Überschuss über PV-Prognose hinaus, der nicht für die Akkuladung gebraucht wird #}
+          {% set ueberschuss_kwh = [pv_rest - akku_fehlt, 0] | max %}
+          {% set ueberschuss_watt = (ueberschuss_kwh * 1000 / stunden) | round(0) %}
+
+          {% set preset = min_preset + ueberschuss_watt %}
+          {{ [[preset, min_preset] | max, max_preset] | min }}
+
+      # Finales Preset, das die Automatisierung tatsächlich setzt.
+      # Morgens (PV steigt noch an, < optimales Preset) wird die Hausausgabe
+      # auf die aktuelle PV-Leistung gedeckelt, damit der Akku nicht
+      # angezapft wird, bevor genug Sonne da ist.
+      # Sobald die PV-Leistung das optimale Preset erreicht/übersteigt,
+      # greift wieder ganz normal die Forecast-Logik (kein Deckel mehr).
+      - name: "SB Finales Tages Preset"
+        unique_id: sb_finales_tages_preset
+        unit_of_measurement: "W"
+        state: >
+          {% set optimal = states('sensor.sb_optimales_tages_preset') | float(100) %}
+          {% set pv_jetzt = states('sensor.sb_pv_leistung_geglaettet') | float(0) %}
+          {% set min_preset = states('input_number.sb_min_preset_tag') | float(100) %}
+
+          {% if pv_jetzt < optimal %}
+            {# Morgen-/Anlauf-Fall: durch aktuelle PV-Leistung deckeln,
+               aber nie unter die Mindest-Preset fallen #}
+            {{ [pv_jetzt, min_preset] | max | round(0) }}
+          {% else %}
+            {# PV liefert bereits genug: normales Optimum verwenden #}
+            {{ optimal | round(0) }}
+          {% endif %}
+
+      # Erwartete PV-Erzeugung morgen (kWh), Summe beider Ausrichtungen
+      - name: "SB PV Prognose Morgen"
+        unique_id: sb_pv_prognose_morgen
+        unit_of_measurement: "kWh"
+        device_class: energy
+        state: >
+          {% set e1 = states('sensor.home_energy_production_tomorrow') | float(0) %}
+          {% set e2 = states('sensor.home_energy_production_tomorrow_2') | float(0) %}
+          {{ (e1 + e2) | round(3) }}
+
+      # Welches Nacht-Preset soll gelten?
+      - name: "SB Empfohlenes Nacht Preset"
+        unique_id: sb_empfohlenes_nacht_preset
+        unit_of_measurement: "W"
+        state: >
+          {% set prognose = states('sensor.sb_pv_prognose_morgen') | float(0) %}
+          {% set schwelle = states('input_number.sb_schwelle_schlechte_prognose') | float(1.5) %}
+          {% if prognose < schwelle %}
+            {{ states('input_number.sb_nacht_preset_niedrig') | float(50) }}
+          {% else %}
+            {{ states('input_number.sb_nacht_preset_normal') | float(100) }}
+          {% endif %}
+
+# ============================================================
+# 3) AUTOMATISIERUNGEN
+# ============================================================
+
+automation:
+  # --- A) Tagsüber: Preset neu berechnen.
+  #     Alle 10 Minuten als Grundtakt, plus schnellere Reaktion (alle 2 Min)
+  #     in der morgendlichen Anlaufphase, solange die PV-Leistung das
+  #     berechnete Optimum noch nicht erreicht hat (Deckel aktiv). ---
+  - alias: "Solarbank – Tages-Preset dynamisch anpassen"
+    description: >-
+      Passt die Home-Load-Preset der Solarbank tagsüber laufend an die
+      Open-Meteo-Prognose (beide Ausrichtungen) an, damit der Akku bis
+      Sonnenuntergang voll wird. Morgens wird die Preset zusätzlich auf
+      die aktuelle PV-Leistung gedeckelt.
+    trigger:
+      - platform: time_pattern
+        minutes: "/10"
+        id: "Grundtakt"
+      - platform: time_pattern
+        minutes: "/2"
+        id: "Anlaufphase"
+    condition:
+      - condition: state
+        entity_id: input_boolean.sb_optimierung_aktiv
+        state: "on"
+      - condition: sun
+        after: sunrise
+        before: sunset
+      # Der schnelle 2-Minuten-Trigger darf nur greifen, solange der
+      # Morgen-Deckel aktiv ist (PV-Leistung < optimales Preset).
+      # Der 10-Minuten-Grundtakt läuft immer, unabhängig davon.
+      - condition: or
+        conditions:
+          - condition: trigger
+            id: "Grundtakt"
+          - condition: template
+            value_template: >-
+              {{ states('sensor.sb_pv_leistung_geglaettet') | float(0)
+                 < states('sensor.sb_optimales_tages_preset') | float(0) }}
+    action:
+      - variables:
+          neues_preset: "{{ states('sensor.sb_finales_tages_preset') | float(100) | round(0) }}"
+      - service: number.set_value
+        target:
+          entity_id: number.solarbank_2_e1600_pro_system_einspeisevorgabe
+        data:
+          value: "{{ neues_preset }}"
+      - service: logbook.log
+        data:
+          name: "Solarbank Optimierung"
+          message: >-
+            Tages-Preset gesetzt auf {{ neues_preset }} W
+            (Optimum: {{ states('sensor.sb_optimales_tages_preset') }} W,
+            PV jetzt geglättet: {{ states('sensor.sb_pv_leistung_geglaettet') }} W,
+            PV-Rest: {{ states('sensor.sb_pv_restprognose_heute') }} kWh,
+            Akku fehlt: {{ states('sensor.sb_akku_fehlende_energie') }} kWh)
+
+  # --- B) Bei Sonnenuntergang: auf Nacht-Preset umschalten ---
+  - alias: "Solarbank – Nacht-Preset bei Sonnenuntergang setzen"
+    description: >-
+      Setzt bei Sonnenuntergang das Preset auf 100W oder 50W,
+      abhängig von der Open-Meteo-Prognose für den nächsten Tag.
+    trigger:
+      - platform: sun
+        event: sunset
+        offset: "+00:05:00"
+    condition:
+      - condition: state
+        entity_id: input_boolean.sb_optimierung_aktiv
+        state: "on"
+    action:
+      - variables:
+          nacht_preset: "{{ states('sensor.sb_empfohlenes_nacht_preset') | float(100) | round(0) }}"
+      - service: number.set_value
+        target:
+          entity_id: number.solarbank_2_e1600_pro_system_einspeisevorgabe
+        data:
+          value: "{{ nacht_preset }}"
+      - service: logbook.log
+        data:
+          name: "Solarbank Optimierung"
+          message: >-
+            Nacht-Preset gesetzt auf {{ nacht_preset }} W
+            (PV-Prognose morgen: {{ states('sensor.sb_pv_prognose_morgen') }} kWh)
+
+  # --- C) Optional: Nacht-Preset erneut prüfen, wenn sich die
+  #        Morgen-Prognose von Open-Meteo aktualisiert (z.B. abends) ---
+  - alias: "Solarbank – Nacht-Preset bei aktualisierter Prognose neu setzen"
+    description: >-
+      Falls Open-Meteo die Prognose für morgen aktualisiert,
+      während es schon Nacht ist, wird das Preset neu bewertet.
+    trigger:
+      - platform: state
+        entity_id: sensor.sb_pv_prognose_morgen
+    condition:
+      - condition: state
+        entity_id: input_boolean.sb_optimierung_aktiv
+        state: "on"
+      - condition: sun
+        after: sunset
+        before: sunrise
+    action:
+      - variables:
+          nacht_preset: "{{ states('sensor.sb_empfohlenes_nacht_preset') | float(100) | round(0) }}"
+      - service: number.set_value
+        target:
+          entity_id: number.solarbank_2_e1600_pro_system_einspeisevorgabe
+        data:
+          value: "{{ nacht_preset }}"

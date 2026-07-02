@@ -1,0 +1,5 @@
+gluetun_vpn_start:
+  url: "http://192.168.178.14:8000/v1/openvpn/status"
+  method: PUT
+  payload: '{"status":"running"}'
+  content_type: "application/json"

@@ -1,0 +1,8 @@
+- platform: rest
+  name: gluetun_vpn_status
+  unique_id: gluetun_vpn_status
+  resource: "http://192.168.178.14:8000/v1/openvpn/status"
+  method: GET
+  value_template: "{{ value_json.status | default('unreachable') }}"
+  scan_interval: 30
+  timeout: 5

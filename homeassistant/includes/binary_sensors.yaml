@@ -1,0 +1,16 @@
+- platform: templates
+  sensors:
+    no_one_home:
+      friendly_name: no one is home
+      value_template: >
+        {{ not is_state("person.markus", "home")
+          and not is_state("person.jessica", "home") }}
+- platform: rest
+  name: gluetun_api_erreichbar
+  unique_id: gluetun_api_erreichbar
+  resource: "http://192.168.178.14:8000/v1/openvpn/status"
+  method: GET
+  value_template: "{{ value_json.status is defined }}"
+  device_class: connectivity
+  scan_interval: 30
+  timeout: 5

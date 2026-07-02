@@ -1,0 +1,122 @@
+heizung_aus:
+  alias: heizung_aus
+  sequence:
+  - action: climate.set_temperature
+    data:
+      hvac_mode: 'off'
+      temperature: 5
+    target:
+      device_id:
+      - b4499ed338d0b962f421abd891e3cf9d
+      - 9c456035b8e9184050414db707e71201
+      - 7ddc7df630c96a252e4be78147864851
+      - 6d087056b28b4faad61fbdeabca53c01
+  description: Stellt alle Heizungen aus
+  icon: mdi:radiator-off
+heizung_an:
+  alias: heizung_an
+  sequence:
+  - action: climate.set_temperature
+    data:
+      hvac_mode: auto
+      temperature: 21
+    target:
+      device_id:
+      - b4499ed338d0b962f421abd891e3cf9d
+      - 9c456035b8e9184050414db707e71201
+      - 7ddc7df630c96a252e4be78147864851
+      - 6d087056b28b4faad61fbdeabca53c01
+  description: Stellt alle Heizungen aus
+  icon: mdi:radiator
+arr_stack_start:
+  sequence:
+  - sequence:
+    - device_id: a485044d2c4fab26c8dbf376ba992159
+      domain: button
+      entity_id: 329099bee4a274ee7c5b99dc42f99d9e
+      type: press
+      enabled: false
+    - type: is_running
+      condition: device
+      device_id: a485044d2c4fab26c8dbf376ba992159
+      entity_id: ce070cce4ddc62614b409251d175ce65
+      domain: binary_sensor
+    - device_id: a90803d06afa2af08673e2f843e9200a
+      domain: button
+      entity_id: 54ef84f68d2f9c5065fd9da9e8fc65d1
+      type: press
+    - device_id: 6a0e4e62ca854cef2a2fabd10bc15af9
+      domain: button
+      entity_id: a8df49d25c7b7a09a0aac7010869c98e
+      type: press
+    - device_id: 00f6b8e9566e77044f27f2671bc28679
+      domain: button
+      entity_id: c3e1689b80cb80e93322beb6993f83b9
+      type: press
+    - device_id: 2a2496957f252507c9a3ffd3a36782b8
+      domain: button
+      entity_id: da3f83c1992b0fc3fd13a0e8783943af
+      type: press
+    - device_id: 78e559dc0f658e28488faa0bb09855a7
+      domain: button
+      entity_id: 3f15bde5b5511809d2ae8670ca30ddda
+      type: press
+  alias: arr_stack_start
+  description: ''
+arr_stack_stop:
+  sequence:
+  - parallel:
+    - device_id: a485044d2c4fab26c8dbf376ba992159
+      domain: button
+      entity_id: 94081fafc7a57096cb811f1ff92a71d7
+      type: press
+    - device_id: 78e559dc0f658e28488faa0bb09855a7
+      domain: button
+      entity_id: d63ee3bd3694215e77361324e48f501f
+      type: press
+    - device_id: 00f6b8e9566e77044f27f2671bc28679
+      domain: button
+      entity_id: af8c8e00a3e2fb66f2d707d637ce1dab
+      type: press
+    - device_id: 2a2496957f252507c9a3ffd3a36782b8
+      domain: button
+      entity_id: ad7ef0319493b306fc7885acf6f0371d
+      type: press
+    - device_id: a90803d06afa2af08673e2f843e9200a
+      domain: button
+      entity_id: de65cbe5cd28f1306f96a9dfbb097c23
+      type: press
+    - device_id: 6a0e4e62ca854cef2a2fabd10bc15af9
+      domain: button
+      entity_id: 70775b5921b3b551cc3b18caf36c248c
+      type: press
+alias: arr_stack_stop
+description: ''
+gluetun_vpn_starten:
+  alias: Gluetun VPN starten
+  mode: single
+  sequence:
+  - repeat:
+      while:
+      - condition: template
+        value_template: "{{ repeat.index <= 60 and\n    not is_state('sensor.gluetun_vpn_status',
+          'running') }}\n"
+      sequence:
+      - wait_template: '{{ is_state(''binary_sensor.gluetun_api_erreichbar'', ''on'')
+          }}
+
+          '
+        timeout: 00:00:10
+        continue_on_timeout: true
+      - service: homeassistant.update_entity
+        target:
+          entity_id:
+          - sensor.gluetun_vpn_status
+          - binary_sensor.gluetun_api_erreichbar
+      - if:
+        - condition: template
+          value_template: "{{ is_state('binary_sensor.gluetun_api_erreichbar', 'on')\n
+            \   and not is_state('sensor.gluetun_vpn_status', 'running') }}\n"
+        then:
+        - service: rest_command.gluetun_vpn_start
+      - delay: 00:00:05

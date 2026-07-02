@@ -1,0 +1,17 @@
+- platform: group
+  name: all
+  services:
+    - service: mobile_app_ipad
+    - service: mobile_app_mkiphone
+    - service: mobile_app_sm_g950f
+
+- platform: group
+  name: markus
+  services:
+    - service: mobile_app_ipad
+    - service: mobile_app_mkiphone
+
+- platform: group
+  name: jessica
+  services:
+    - service: mobile_app_sm_g950f
