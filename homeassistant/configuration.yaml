@@ -1,0 +1,41 @@
+﻿# Loads default set of integrations. Do not remove.
+default_config:
+notify:
+  - platform: group
+    name: "NotifyAllGroup"
+    services:
+      - service: mobile_app_iphone
+      - service: mobile_app_ipad_6
+      - service: mobile_app_sm_g950f
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+zha:
+  custom_quirks_path: /config/custom_zha_quirks/
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+sensor: !include includes/sensors.yaml
+input_boolean: !include includes/input_booleans.yaml
+rest_command: !include includes/rest_command.yaml
+
+homeassistant:
+  packages: !include_dir_named packages
+# bahn: !include includes/bahn.yaml
+
+http:
+  cors_allowed_origins:
+    - https://google.com
+    - https://www.home-assistant.io
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 192.168.178.9

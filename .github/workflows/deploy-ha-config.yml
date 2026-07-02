@@ -1,0 +1,77 @@
+name: Deploy Home Assistant config
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "homeassistant/**"
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve config mount and token
+        run: |
+          CONFIG_DIR=""
+          for candidate in /homeassistant /config; do
+            if [ -d "$candidate" ] && [ -w "$candidate" ]; then
+              CONFIG_DIR="$candidate"
+              break
+            fi
+          done
+          if [ -z "$CONFIG_DIR" ]; then
+            echo "Could not find a writable Home Assistant config mount (tried /homeassistant, /config)." >&2
+            echo "Check the 'map' entry in github-runner/config.yaml." >&2
+            exit 1
+          fi
+          echo "CONFIG_DIR=$CONFIG_DIR" >> "$GITHUB_ENV"
+
+          HA_TOKEN=$(jq -r '.ha_token // empty' /data/options.json)
+          if [ -z "$HA_TOKEN" ]; then
+            echo "The 'ha_token' add-on option must be set" >&2
+            exit 1
+          fi
+          echo "::add-mask::$HA_TOKEN"
+          echo "HA_TOKEN=$HA_TOKEN" >> "$GITHUB_ENV"
+
+      - name: Back up current config
+        run: |
+          rm -rf /tmp/ha-config-backup
+          mkdir -p /tmp/ha-config-backup
+          cp -a "$CONFIG_DIR"/. /tmp/ha-config-backup/
+
+      - name: Copy new config into place
+        run: |
+          # No --delete: only ever add/update files that exist in homeassistant/,
+          # never remove files (like secrets.yaml, .storage/, the database, ...)
+          # that this repo intentionally doesn't track.
+          rsync -a homeassistant/ "$CONFIG_DIR"/
+
+      - name: Validate configuration
+        id: check
+        run: |
+          RESULT=$(curl -fsSL -X POST \
+            -H "Authorization: Bearer $HA_TOKEN" \
+            -H "Content-Type: application/json" \
+            http://homeassistant:8123/api/config/core/check_config)
+          echo "$RESULT"
+          echo "$RESULT" | jq -e '.result == "valid"' > /dev/null
+
+      - name: Roll back on validation failure
+        if: failure() && steps.check.outcome == 'failure'
+        run: |
+          rsync -a --delete /tmp/ha-config-backup/ "$CONFIG_DIR"/
+          echo "Configuration was invalid, rolled back to the previous version." >&2
+
+      - name: Reload Home Assistant
+        if: success()
+        run: |
+          for service in homeassistant/reload_core_config automation/reload script/reload scene/reload; do
+            curl -fsSL -X POST \
+              -H "Authorization: Bearer $HA_TOKEN" \
+              -H "Content-Type: application/json" \
+              "http://homeassistant:8123/api/services/$service"
+          done
