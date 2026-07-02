@@ -20,14 +20,12 @@ jobs:
       - name: Resolve add-on slug
         id: addon
         run: |
-          ADDONS=$(curl -fsSL \
+          SLUG=$(curl -fsSL \
             -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" \
-            http://supervisor/addons)
-          SLUG=$(echo "$ADDONS" | jq -r '.data.addons[] | select(.name == "NetDaemon") | .slug')
+            http://supervisor/addons \
+            | jq -r '.data.addons[] | select(.name == "NetDaemon") | .slug')
           if [ -z "$SLUG" ]; then
-            echo "Could not find an add-on named 'NetDaemon' via the Supervisor API." >&2
-            echo "Installed add-ons known to Supervisor:" >&2
-            echo "$ADDONS" | jq -r '.data.addons[] | "  - \(.name) (slug: \(.slug), installed: \(.installed))"' >&2
+            echo "Could not find an add-on named 'NetDaemon' via the Supervisor API" >&2
             exit 1
           fi
           echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
