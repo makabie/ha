@@ -9,7 +9,7 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        curl ca-certificates tar jq git \
+        curl ca-certificates tar jq git rsync \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /home/runner/actions-runner

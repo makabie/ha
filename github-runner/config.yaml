@@ -9,11 +9,15 @@ arch:
 init: false
 hassio_api: true
 hassio_role: manager
+map:
+  - homeassistant_config:rw
 options:
   repo: "makabie/ha"
   github_pat: ""
   runner_name: "homeassistant"
+  ha_token: ""
 schema:
   repo: str
   github_pat: password
   runner_name: str
+  ha_token: password
