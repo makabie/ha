@@ -2,7 +2,7 @@ name: Deploy NetDaemon add-on
 
 on:
   push:
-    branches: [main]
+    branches: [deploymentFix]
     paths:
       - "netdaemon/**"
   workflow_dispatch: {}

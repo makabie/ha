@@ -9,11 +9,8 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        curl ca-certificates tar jq git sudo \
+        curl ca-certificates tar jq git \
     && rm -rf /var/lib/apt/lists/*
-
-RUN useradd -m runner \
-    && echo "runner ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/runner
 
 WORKDIR /home/runner/actions-runner
 
@@ -27,8 +24,6 @@ RUN case "${TARGETARCH}" in \
     && tar xzf runner.tar.gz \
     && rm runner.tar.gz \
     && ./bin/installdependencies.sh
-
-RUN chown -R runner:runner /home/runner
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
