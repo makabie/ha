@@ -1,3 +1,4 @@
+using System.Globalization;
 using NetDaemon.Extensions.Scheduler;
 
 namespace HassModel;
@@ -26,8 +27,8 @@ public class HueSmartPlugAutoOff
 
                 if (enabled.State != "on")
                     return;
-
-                var minutes = double.TryParse(delayMinutes.State, out var parsed) ? parsed : 10;
+                NumberStyles styles = NumberStyles.Number | NumberStyles.AllowDecimalPoint;
+                var minutes = double.TryParse(delayMinutes.State, styles, CultureInfo.InvariantCulture ,out var parsed) ? parsed : 10;
                 logger.LogInformation("HueSmartPlug turned on, scheduling auto-off in {Minutes} min", minutes);
                 pendingTurnOff = scheduler.RunIn(TimeSpan.FromMinutes(minutes), () => plug.CallService("turn_off"));
             });
