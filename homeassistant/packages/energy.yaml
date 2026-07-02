@@ -94,6 +94,32 @@ sensor:
         window_size: "00:03"
         precision: 0
 
+  # Umwandlung von Leistung (W) in Energie (kWh)
+  - platform: integration
+    source: sensor.solarbank_2_e1600_pro_solarleistung
+    name: "PV energy total"
+    unique_id: pv_energy_total
+    unit_prefix: k
+    round: 2
+    method: left
+
+# ============================================================
+# 2b) UTILITY METER (Tägliche/Monatliche Zähler)
+# ============================================================
+
+utility_meter:
+  pv_energy_day:
+    source: sensor.pv_energy_total
+    name: "PV energy today"
+    cycle: daily
+  pv_energy_month:
+    source: sensor.pv_energy_total
+    name: "PV energy month"
+    cycle: month
+  pv_energy_year:
+    source: sensor.pv_energy_total
+    name: "PV energy year"
+    cycle: year    
 # ============================================================
 # 2b) TEMPLATE-SENSOREN (Helfer-Logik)
 #    WICHTIG: Nur EIN "template:"-Key in der gesamten Config!
