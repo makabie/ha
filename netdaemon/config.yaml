@@ -9,6 +9,3 @@ arch:
 init: false
 hassio_api: true
 homeassistant_api: true
-map: []
-options: {}
-schema: {}
