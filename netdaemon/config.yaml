@@ -1,5 +1,5 @@
 name: NetDaemon
-version: "0.1.0"
+version: "0.1.1"
 slug: netdaemon
 description: Custom Home Assistant automations written in C# with NetDaemon
 url: https://github.com/makabie/ha
