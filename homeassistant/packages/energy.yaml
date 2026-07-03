@@ -29,7 +29,7 @@ input_number:
   sb_max_hausausgabe:
     name: "SB Maximale Hausausgabe"
     min: 0
-    max: 1600
+    max: 800
     step: 10
     unit_of_measurement: "W"
     icon: mdi:home-lightning-bolt
@@ -91,7 +91,7 @@ sensor:
     entity_id: sensor.solarbank_2_e1600_pro_solarleistung
     filters:
       - filter: time_simple_moving_average
-        window_size: "00:03"
+        window_size: "00:10"
         precision: 0
 
   # Umwandlung von Leistung (W) in Energie (kWh)
